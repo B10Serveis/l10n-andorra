@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2020 - Marc Tormo - Batista10
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+
+    <record id="mod_111_02" model="account.account.tag">
+        <field name="name">mod111[02]</field>
+        <field name="applicability">taxes</field>
+        <field name="country_id" ref="base.ad"/>
+    </record>
+    <record id="mod_111_03" model="account.account.tag">
+        <field name="name">mod111[03]</field>
+        <field name="applicability">taxes</field>
+        <field name="country_id" ref="base.ad"/>
+    </record>
+    <record id="mod_111_05" model="account.account.tag">
+        <field name="name">mod111[05]</field>
+        <field name="applicability">taxes</field>
+        <field name="country_id" ref="base.ad"/>
+    </record>
+    <record id="mod_111_06" model="account.account.tag">
+        <field name="name">mod111[06]</field>
+        <field name="applicability">taxes</field>
+        <field name="country_id" ref="base.ad"/>
+    </record>
+    <record id="mod_111_08" model="account.account.tag">
+        <field name="name">mod111[08]</field>
+        <field name="applicability">taxes</field>
+        <field name="country_id" ref="base.ad"/>
+    </record>
+    <record id="mod_111_09" model="account.account.tag">
+        <field name="name">mod111[09]</field>
+        <field name="applicability">taxes</field>
+        <field name="country_id" ref="base.ad"/>
+    </record>
+
+    <record id="mod_115_02" model="account.account.tag">
+        <field name="name">mod115[02]</field>
+        <field name="applicability">taxes</field>
+        <field name="country_id" ref="base.ad"/>
+    </record>
+    <record id="mod_115_03" model="account.account.tag">
+        <field name="name">mod115[03]</field>
+        <field name="applicability">taxes</field>
+        <field name="country_id" ref="base.ad"/>
+    </record>
+
+    <record id="mod_303_01" model="account.account.tag">
+        <field name="name">mod303[01]</field>
+        <field name="applicability">taxes</field>
+        <field name="country_id" ref="base.ad"/>
+    </record>
+    <record id="mod_303_03" model="account.account.tag">
+        <field name="name">mod303[03]</field>
+        <field name="applicability">taxes</field>
+        <field name="country_id" ref="base.ad"/>
+    </record>
+    <record id="mod_303_04" model="account.account.tag">
+        <field name="name">mod303[04]</field>
+        <field name="applicability">taxes</field>
+        <field name="country_id" ref="base.ad"/>
+    </record>
+    <record id="mod_303_06" model="account.account.tag">
+        <field name="name">mod303[06]</field>
+        <field name="applicability">taxes</field>
+        <field name="country_id" ref="base.ad"/>
+    </record>
+    <record id="mod_303_07" model="account.account.tag">
+        <field name="name">mod303[07]</field>
+        <field name="applicability">taxes</field>
+        <field name="country_id" ref="base.ad"/>
+    </record>
+    <record id="mod_303_09" model="account.account.tag">
+        <field name="name">mod303[09]</field>
+        <field name="applicability">taxes</field>
+        <field name="country_id" ref="base.ad"/>
+    </record>
+    <record id="mod_303_10" model="account.account.tag">
+        <field name="name">mod303[10]</field>
+        <field name="applicability">taxes</field>
+        <field name="country_id" ref="base.ad"/>
+    </record>
+    <record id="mod_303_11" model="account.account.tag">
+        <field name="name">mod303[11]</field>
+        <field name="applicability">taxes</field>
+        <field name="country_id" ref="base.ad"/>
+    </record>
+    <record id="mod_303_12" model="account.account.tag">
+        <field name="name">mod303[12]</field>
+        <field name="applicability">taxes</field>
+        <field name="country_id" ref="base.ad"/>
+    </record>
+    <record id="mod_303_13" model="account.account.tag">
+        <field name="name">mod303[13]</field>
+        <field name="applicability">taxes</field>
+        <field name="country_id" ref="base.ad"/>
+    </record>
+    <record id="mod_303_14_sale" model="account.account.tag">
+        <field name="name">mod303[14]sale</field>
+        <field name="applicability">taxes</field>
+        <field name="country_id" ref="base.ad"/>
+    </record>
+    <record id="mod_303_14_purchase" model="account.account.tag">
+        <field name="name">mod303[14]purchase</field>
+        <field name="applicability">taxes</field>
+        <field name="country_id" ref="base.ad"/>
+    </record>
+    <record id="mod_303_15" model="account.account.tag">
+        <field name="name">mod303[15]purchase</field>
+        <field name="applicability">taxes</field>
+        <field name="country_id" ref="base.ad"/>
+    </record>
+    <record id="mod_303_16" model="account.account.tag">
+        <field name="name">mod303[16]</field>
+        <field name="applicability">taxes</field>
+        <field name="country_id" ref="base.ad"/>
+    </record>
+    <record id="mod_303_18" model="account.account.tag">
+        <field name="name">mod303[18]</field>
+        <field name="applicability">taxes</field>
+        <field name="country_id" ref="base.ad"/>
+    </record>
+    <record id="mod_303_19" model="account.account.tag">
+        <field name="name">mod303[19]</field>
+        <field name="applicability">taxes</field>
+        <field name="country_id" ref="base.ad"/>
+    </record>
+    <record id="mod_303_21" model="account.account.tag">
+        <field name="name">mod303[21]</field>
+        <field name="applicability">taxes</field>
+        <field name="country_id" ref="base.ad"/>
+    </record>
+    <record id="mod_303_22" model="account.account.tag">
+        <field name="name">mod303[22]</field>
+        <field name="applicability">taxes</field>
+        <field name="country_id" ref="base.ad"/>
+    </record>
+    <record id="mod_303_24" model="account.account.tag">
+        <field name="name">mod303[24]</field>
+        <field name="applicability">taxes</field>
+        <field name="country_id" ref="base.ad"/>
+    </record>
+    <record id="mod_303_25" model="account.account.tag">
+        <field name="name">mod303[25]</field>
+        <field name="applicability">taxes</field>
+        <field name="country_id" ref="base.ad"/>
+    </record>
+    <record id="mod_303_26" model="account.account.tag">
+        <field name="name">mod303[26]</field>
+        <field name="applicability">taxes</field>
+        <field name="country_id" ref="base.ad"/>
+    </record>
+    <record id="mod_303_28" model="account.account.tag">
+        <field name="name">mod303[28]</field>
+        <field name="applicability">taxes</field>
+        <field name="country_id" ref="base.ad"/>
+    </record>
+    <record id="mod_303_29" model="account.account.tag">
+        <field name="name">mod303[29]</field>
+        <field name="applicability">taxes</field>
+        <field name="country_id" ref="base.ad"/>
+    </record>
+    <record id="mod_303_30" model="account.account.tag">
+        <field name="name">mod303[30]</field>
+        <field name="applicability">taxes</field>
+        <field name="country_id" ref="base.ad"/>
+    </record>
+    <record id="mod_303_31" model="account.account.tag">
+        <field name="name">mod303[31]</field>
+        <field name="applicability">taxes</field>
+        <field name="country_id" ref="base.ad"/>
+    </record>
+    <record id="mod_303_32" model="account.account.tag">
+        <field name="name">mod303[32]</field>
+        <field name="applicability">taxes</field>
+        <field name="country_id" ref="base.ad"/>
+    </record>
+    <record id="mod_303_33" model="account.account.tag">
+        <field name="name">mod303[33]</field>
+        <field name="applicability">taxes</field>
+        <field name="country_id" ref="base.ad"/>
+    </record>
+    <record id="mod_303_34" model="account.account.tag">
+        <field name="name">mod303[34]</field>
+        <field name="applicability">taxes</field>
+        <field name="country_id" ref="base.ad"/>
+    </record>
+    <record id="mod_303_35" model="account.account.tag">
+        <field name="name">mod303[35]</field>
+        <field name="applicability">taxes</field>
+        <field name="country_id" ref="base.ad"/>
+    </record>
+    <record id="mod_303_36" model="account.account.tag">
+        <field name="name">mod303[36]</field>
+        <field name="applicability">taxes</field>
+        <field name="country_id" ref="base.ad"/>
+    </record>
+    <record id="mod_303_37" model="account.account.tag">
+        <field name="name">mod303[37]</field>
+        <field name="applicability">taxes</field>
+        <field name="country_id" ref="base.ad"/>
+    </record>
+    <record id="mod_303_38" model="account.account.tag">
+        <field name="name">mod303[38]</field>
+        <field name="applicability">taxes</field>
+        <field name="country_id" ref="base.ad"/>
+    </record>
+    <record id="mod_303_39" model="account.account.tag">
+        <field name="name">mod303[39]</field>
+        <field name="applicability">taxes</field>
+        <field name="country_id" ref="base.ad"/>
+    </record>
+    <record id="mod_303_40" model="account.account.tag">
+        <field name="name">mod303[40]</field>
+        <field name="applicability">taxes</field>
+        <field name="country_id" ref="base.ad"/>
+    </record>
+    <record id="mod_303_41" model="account.account.tag">
+        <field name="name">mod303[41]</field>
+        <field name="applicability">taxes</field>
+        <field name="country_id" ref="base.ad"/>
+    </record>
+    <record id="mod_303_42" model="account.account.tag">
+        <field name="name">mod303[42]</field>
+        <field name="applicability">taxes</field>
+        <field name="country_id" ref="base.ad"/>
+    </record>
+    <record id="mod_303_59" model="account.account.tag">
+        <field name="name">mod303[59]</field>
+        <field name="applicability">taxes</field>
+        <field name="country_id" ref="base.ad"/>
+    </record>
+    <record id="mod_303_60" model="account.account.tag">
+        <field name="name">mod303[60]</field>
+        <field name="applicability">taxes</field>
+        <field name="country_id" ref="base.ad"/>
+    </record>
+    <record id="mod_303_61" model="account.account.tag">
+        <field name="name">mod303[61]</field>
+        <field name="applicability">taxes</field>
+        <field name="country_id" ref="base.ad"/>
+    </record>
+
+    <record id="account_tax_template_s_igi45" model="account.tax.template">
+        <field name="sequence" eval="0"/> <!-- Impost per defecte a la venda -->
+        <field name="description"/> <!-- for resetting the value on existing DBs -->
+        <field name="type_tax_use">sale</field>
+        <field name="name">IGI 4,5% Vendes</field>
+        <field name="chart_template_id" ref="l10n_ad.account_chart_template_common"/>
+        <field name="amount" eval="4.5"/>
+        <field name="amount_type">percent</field>
+        <field name="tax_group_id" ref="tax_group_igi_45"/>
+        <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('mod_303_07')],
+            }),
+
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('l10n_ad.account_common_477'),
+                'tag_ids': [ref('mod_303_09')],
+            }),
+
+        ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('mod_303_14_sale')],
+            }),
+
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('l10n_ad.account_common_477'),
+                'tag_ids': [ref('mod_303_15')],
+            }),
+        ]"/>
+    </record>    
+    <record id="account_tax_template_p_igi45" model="account.tax.template">
+        <field name="sequence" eval="0"/> <!-- Impost per defecte a la venda -->
+        <field name="description"/> <!-- for resetting the value on existing DBs -->
+        <field name="type_tax_use">purchase</field>
+        <field name="name">IGI 4,5% Compres</field>
+        <field name="chart_template_id" ref="l10n_ad.account_chart_template_common"/>
+        <field name="amount" eval="4.5"/>
+        <field name="amount_type">percent</field>
+        <field name="tax_group_id" ref="tax_group_igi_45"/>
+        <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('mod_303_28')],
+            }),
+
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('l10n_ad.account_common_472'),
+                'tag_ids': [ref('mod_303_29')],
+            }),
+
+        ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('mod_303_40')],
+            }),
+
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('l10n_ad.account_common_472'),
+                'tag_ids': [ref('mod_303_41')],
+            }),
+        ]"/>
+    </record>
+    <record id="account_tax_template_s_igi25" model="account.tax.template">
+        <field name="description"/> <!-- for resetting the value on existing DBs -->
+        <field name="type_tax_use">sale</field>
+        <field name="name">IGI 2,5% Vendes</field>
+        <field name="chart_template_id" ref="l10n_ad.account_chart_template_common"/>
+        <field name="amount" eval="2.5"/>
+        <field name="amount_type">percent</field>
+        <field name="tax_group_id" ref="tax_group_igi_25"/>
+        <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('mod_303_04')],
+            }),
+
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('l10n_ad.account_common_477'),
+                'tag_ids': [ref('mod_303_06')],
+            }),
+
+        ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('mod_303_14_sale')],
+            }),
+
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('l10n_ad.account_common_477'),
+                'tag_ids': [ref('mod_303_15')],
+            }),
+        ]"/>
+    </record>
+    <record id="account_tax_template_p_igi25" model="account.tax.template">
+        <field name="description"/> <!-- for resetting the value on existing DBs -->
+        <field name="type_tax_use">purchase</field>
+        <field name="name">IGI 2,5% Compres</field>
+        <field name="chart_template_id" ref="l10n_ad.account_chart_template_common"/>
+        <field name="amount" eval="2.5"/>
+        <field name="amount_type">percent</field>
+        <field name="tax_group_id" ref="tax_group_igi_25"/>
+        <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('mod_303_28')],
+            }),
+
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'tag_ids': [ref('mod_303_29')],
+                'account_id': ref('l10n_ad.account_common_472'),
+            }),
+
+        ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('mod_303_40')],
+            }),
+
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'tag_ids': [ref('mod_303_41')],
+                'account_id': ref('l10n_ad.account_common_472'),
+            }),
+        ]"/>
+    </record>
+    <record id="account_tax_template_s_igi1" model="account.tax.template">
+        <field name="description"/> <!-- for resetting the value on existing DBs -->
+        <field name="type_tax_use">sale</field>
+        <field name="name">IGI 1% Vendes</field>
+        <field name="chart_template_id" ref="l10n_ad.account_chart_template_common"/>
+        <field name="amount" eval="1"/>
+        <field name="amount_type">percent</field>
+        <field name="tax_group_id" ref="tax_group_igi_1"/>
+        <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('mod_303_01')],
+            }),
+
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'tag_ids': [ref('mod_303_03')],
+                'account_id': ref('l10n_ad.account_common_477'),
+            }),
+
+        ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('mod_303_14_sale')],
+            }),
+
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'tag_ids': [ref('mod_303_15')],
+                'account_id': ref('l10n_ad.account_common_477'),
+            }),
+        ]"/>
+    </record>
+    <record id="account_tax_template_p_igi1" model="account.tax.template">
+        <field name="description"/> <!-- for resetting the value on existing DBs -->
+        <field name="type_tax_use">purchase</field>
+        <field name="name">IGI 1% Compres</field>
+        <field name="chart_template_id" ref="l10n_ad.account_chart_template_common"/>
+        <field name="amount" eval="1"/>
+        <field name="amount_type">percent</field>
+        <field name="tax_group_id" ref="tax_group_igi_1"/>
+        <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('mod_303_28')],
+            }),
+
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'tag_ids': [ref('mod_303_29')],
+                'account_id': ref('l10n_ad.account_common_472'),
+            }),
+
+        ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('mod_303_40')],
+            }),
+
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'tag_ids': [ref('mod_303_41')],
+                'account_id': ref('l10n_ad.account_common_472'),
+            }),
+        ]"/>
+    </record>
+    <record id="account_tax_template_s_igi0" model="account.tax.template">
+        <field name="description">IGI 0%</field>
+        <field name="type_tax_use">sale</field>
+        <field name="name">IGI 0% Vendes</field>
+        <field name="chart_template_id" ref="l10n_ad.account_chart_template_common"/>
+        <field name="amount" eval="0"/>
+        <field name="amount_type">percent</field>
+        <field name="tax_group_id" ref="tax_group_igi_0"/>
+        <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('mod_303_61')],
+            }),
+
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+            }),
+
+        ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('mod_303_61')],
+            }),
+
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+            }),
+        ]"/>
+    </record>    
+    <record id="account_tax_template_p_igi0" model="account.tax.template">
+        <field name="description"/> <!-- for resetting the value on existing DBs -->
+        <field name="type_tax_use">purchase</field>
+        <field name="name">IGI 0% Compres</field>
+        <field name="chart_template_id" ref="l10n_ad.account_chart_template_common"/>
+        <field name="amount" eval="0"/>
+        <field name="amount_type">percent</field>
+        <field name="tax_group_id" ref="tax_group_igi_0"/>
+        <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+            }),
+
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+            }),
+
+        ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+            }),
+
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+            }),
+        ]"/>
+    </record>
+    <record id="account_tax_template_s_retencions5" model="account.tax.template">
+        <field name="description">Retenció 5%</field>
+        <field name="type_tax_use">sale</field>
+        <field name="name">Retencions a compte IRPF 5%</field>
+        <field name="chart_template_id" ref="l10n_ad.account_chart_template_common"/>
+        <field name="amount" eval="-5"/>
+        <field name="amount_type">percent</field>
+        <field name="tax_group_id" ref="tax_group_retencions_5"/>
+        <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+            }),
+
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('l10n_ad.account_common_473'),
+            }),
+
+        ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+            }),
+
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('l10n_ad.account_common_473'),
+            }),
+        ]"/>
+    </record>
+    <record id="account_tax_template_p_retencions5" model="account.tax.template">
+        <field name="description"/> <!-- for resetting the value on existing DBs -->
+        <field name="type_tax_use">purchase</field>
+        <field name="name">Retencions IRPF 5%</field>
+        <field name="chart_template_id" ref="l10n_ad.account_chart_template_common"/>
+        <field name="amount" eval="-5"/>
+        <field name="amount_type">percent</field>
+        <field name="tax_group_id" ref="tax_group_retencions_5"/>
+        <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('mod_111_08')],
+            }),
+
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('l10n_ad.account_common_475'),
+                'tag_ids': [ref('mod_111_09')],
+            }),
+
+        ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('mod_111_08')],
+            }),
+
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('l10n_ad.account_common_475'),
+                'tag_ids': [ref('mod_111_09')],
+            }),
+        ]"/>
+    </record>
+    <record id="account_tax_template_s_retencions10" model="account.tax.template">
+        <field name="description">Retenció 10%</field>
+        <field name="type_tax_use">sale</field>
+        <field name="name">Retencions a compte IRPF 10%</field>
+        <field name="chart_template_id" ref="l10n_ad.account_chart_template_common"/>
+        <field name="amount" eval="-10"/>
+        <field name="amount_type">percent</field>
+        <field name="tax_group_id" ref="tax_group_retencions_10"/>
+        <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+            }),
+
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('l10n_ad.account_common_473'),
+            }),
+
+        ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+            }),
+
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('l10n_ad.account_common_473'),
+            }),
+        ]"/>
+    </record>    
+    <record id="account_tax_template_p_retencions10" model="account.tax.template">
+        <field name="description"/> <!-- for resetting the value on existing DBs -->
+        <field name="type_tax_use">purchase</field>
+        <field name="name">Retencions IRPF 10%</field>
+        <field name="chart_template_id" ref="l10n_ad.account_chart_template_common"/>
+        <field name="amount" eval="-10"/>
+        <field name="sequence" eval="2"/>
+        <field name="amount_type">percent</field>
+        <field name="tax_group_id" ref="tax_group_retencions_10"/>
+        <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('mod_111_08')],
+            }),
+
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('l10n_ad.account_common_475'),
+                'tag_ids': [ref('mod_111_09')],
+            }),
+
+        ]"/>
+        <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+                'tag_ids': [ref('mod_111_08')],
+            }),
+
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('l10n_ad.account_common_475'),
+                'tag_ids': [ref('mod_111_09')],
+            }),
+        ]"/>
+    </record>
+</odoo>

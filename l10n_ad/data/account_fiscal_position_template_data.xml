@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2020 - Marc Tormo - Batista10
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <data>
+
+        <!-- ************************************************************* -->
+        <!-- Fiscal Position Templates -->
+        <!-- ************************************************************* -->
+
+        <record id="fp_general" model="account.fiscal.position.template">
+            <field name="sequence">1</field>
+            <field name="name">Règim General</field>
+            <field name="chart_template_id" ref="account_chart_template_common"/>
+            <field name="auto_apply" eval="True"/>
+            <field name="vat_required" eval="True"/>
+            <field name="country_id" ref="base.ad"/>
+        </record>
+        <record id="fp_retencions5" model="account.fiscal.position.template">
+            <field name="name">Retenció IRPF 5%</field>
+            <field name="chart_template_id" ref="account_chart_template_common"/>
+        </record>
+
+        <record id="fp_retencions10" model="account.fiscal.position.template">
+            <field name="name">Retenció IRPF 10%</field>
+            <field name="chart_template_id" ref="account_chart_template_common"/>
+        </record>
+
+        <!-- ************************************************************* -->
+        <!-- Fiscal Position Tax Templates -->
+        <!-- ************************************************************* -->
+
+        <!-- Retencions IRPF 10% -->
+
+        <record id="fptt_retencions10sale_45"
+            model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fp_retencions10"/>
+            <field name="tax_src_id" ref="account_tax_template_s_igi45"/>
+            <field name="tax_dest_id" ref="account_tax_template_s_igi45"/>
+        </record>
+        <record id="fptt_retencions10sale_45_2"
+            model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fp_retencions10"/>
+            <field name="tax_src_id" ref="account_tax_template_s_igi45"/>
+            <field name="tax_dest_id" ref="account_tax_template_s_retencions10"/>
+        </record>        
+        <record id="fptt_retencions10sale_25"
+            model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fp_retencions10"/>
+            <field name="tax_src_id" ref="account_tax_template_s_igi25"/>
+            <field name="tax_dest_id" ref="account_tax_template_s_igi25"/>
+        </record>
+        <record id="fptt_retencions10sale_25_2"
+            model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fp_retencions10"/>
+            <field name="tax_src_id" ref="account_tax_template_s_igi25"/>
+            <field name="tax_dest_id" ref="account_tax_template_s_retencions10"/>
+        </record>        
+        <record id="fptt_retencions10sale_1"
+            model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fp_retencions10"/>
+            <field name="tax_src_id" ref="account_tax_template_s_igi1"/>
+            <field name="tax_dest_id" ref="account_tax_template_s_igi1"/>
+        </record>
+        <record id="fptt_retencions10sale_1_2"
+            model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fp_retencions10"/>
+            <field name="tax_src_id" ref="account_tax_template_s_igi1"/>
+            <field name="tax_dest_id" ref="account_tax_template_s_retencions10"/>
+        </record>        
+        <record id="fptt_retencions10_45" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fp_retencions10"/>
+            <field name="tax_src_id" ref="account_tax_template_p_igi45"/>
+            <field name="tax_dest_id" ref="account_tax_template_p_igi45"/>
+        </record>
+        <record id="fptt_retencions10_45_2" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fp_retencions10"/>
+            <field name="tax_src_id" ref="account_tax_template_p_igi45"/>
+            <field name="tax_dest_id" ref="account_tax_template_p_retencions10"/>
+        </record>        
+        <record id="fptt_retencions10_25" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fp_retencions10"/>
+            <field name="tax_src_id" ref="account_tax_template_p_igi25"/>
+            <field name="tax_dest_id" ref="account_tax_template_p_igi25"/>
+        </record>
+        <record id="fptt_retencions10_25_2" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fp_retencions10"/>
+            <field name="tax_src_id" ref="account_tax_template_p_igi25"/>
+            <field name="tax_dest_id" ref="account_tax_template_p_retencions10"/>
+        </record>        
+        <record id="fptt_retencions10_1" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fp_retencions10"/>
+            <field name="tax_src_id" ref="account_tax_template_p_igi1"/>
+            <field name="tax_dest_id" ref="account_tax_template_p_igi1"/>
+        </record>
+        <record id="fptt_retencions10_1_2" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fp_retencions10"/>
+            <field name="tax_src_id" ref="account_tax_template_p_igi1"/>
+            <field name="tax_dest_id" ref="account_tax_template_p_retencions10"/>
+        </record>        
+        <record id="fptt_retencions10sale_0"
+            model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fp_retencions10"/>
+            <field name="tax_src_id" ref="account_tax_template_s_igi0"/>
+            <field name="tax_dest_id" ref="account_tax_template_s_igi0"/>
+        </record>
+        <record id="fptt_retencions10sale_0_2"
+            model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fp_retencions10"/>
+            <field name="tax_src_id" ref="account_tax_template_s_igi0"/>
+            <field name="tax_dest_id" ref="account_tax_template_s_retencions10"/>
+        </record>
+        <record id="fptt_retencions10_0" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fp_retencions10"/>
+            <field name="tax_src_id" ref="account_tax_template_p_igi0"/>
+            <field name="tax_dest_id" ref="account_tax_template_p_igi0"/>
+        </record>
+        <record id="fptt_retencions10_0_2" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fp_retencions10"/>
+            <field name="tax_src_id" ref="account_tax_template_p_igi0"/>
+            <field name="tax_dest_id" ref="account_tax_template_p_retencions10"/>
+        </record>
+
+        <!-- Retenciones IRPF 5% -->
+
+        <record id="fptt_retencions5sale_45"
+            model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fp_retencions5"/>
+            <field name="tax_src_id" ref="account_tax_template_s_igi45"/>
+            <field name="tax_dest_id" ref="account_tax_template_s_igi45"/>
+        </record>
+        <record id="fptt_retencions5sale_45_2"
+            model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fp_retencions5"/>
+            <field name="tax_src_id" ref="account_tax_template_s_igi45"/>
+            <field name="tax_dest_id" ref="account_tax_template_s_retencions5"/>
+        </record>        
+        <record id="fptt_retencions5sale_25"
+            model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fp_retencions5"/>
+            <field name="tax_src_id" ref="account_tax_template_s_igi25"/>
+            <field name="tax_dest_id" ref="account_tax_template_s_igi25"/>
+        </record>
+        <record id="fptt_retencions5sale_25_2"
+            model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fp_retencions5"/>
+            <field name="tax_src_id" ref="account_tax_template_s_igi25"/>
+            <field name="tax_dest_id" ref="account_tax_template_s_retencions5"/>
+        </record>        
+        <record id="fptt_retencions5sale_1"
+            model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fp_retencions5"/>
+            <field name="tax_src_id" ref="account_tax_template_s_igi1"/>
+            <field name="tax_dest_id" ref="account_tax_template_s_igi1"/>
+        </record>
+        <record id="fptt_retencions5sale_1_2"
+            model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fp_retencions5"/>
+            <field name="tax_src_id" ref="account_tax_template_s_igi1"/>
+            <field name="tax_dest_id" ref="account_tax_template_s_retencions5"/>
+        </record>        
+        <record id="fptt_retencions5_45" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fp_retencions5"/>
+            <field name="tax_src_id" ref="account_tax_template_p_igi45"/>
+            <field name="tax_dest_id" ref="account_tax_template_p_igi45"/>
+        </record>
+        <record id="fptt_retencions5_45_2" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fp_retencions5"/>
+            <field name="tax_src_id" ref="account_tax_template_p_igi45"/>
+            <field name="tax_dest_id" ref="account_tax_template_p_retencions5"/>
+        </record>        
+        <record id="fptt_retencions5_25" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fp_retencions5"/>
+            <field name="tax_src_id" ref="account_tax_template_p_igi25"/>
+            <field name="tax_dest_id" ref="account_tax_template_p_igi25"/>
+        </record>
+        <record id="fptt_retencions5_25_2" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fp_retencions5"/>
+            <field name="tax_src_id" ref="account_tax_template_p_igi25"/>
+            <field name="tax_dest_id" ref="account_tax_template_p_retencions5"/>
+        </record>        
+        <record id="fptt_retencions5_1" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fp_retencions5"/>
+            <field name="tax_src_id" ref="account_tax_template_p_igi1"/>
+            <field name="tax_dest_id" ref="account_tax_template_p_igi1"/>
+        </record>
+        <record id="fptt_retencions5_1_2" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fp_retencions5"/>
+            <field name="tax_src_id" ref="account_tax_template_p_igi1"/>
+            <field name="tax_dest_id" ref="account_tax_template_p_retencions5"/>
+        </record>        
+        <record id="fptt_retencions5sale_0"
+            model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fp_retencions5"/>
+            <field name="tax_src_id" ref="account_tax_template_s_igi0"/>
+            <field name="tax_dest_id" ref="account_tax_template_s_igi0"/>
+        </record>
+        <record id="fptt_retencions5sale_0_2"
+            model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fp_retencions5"/>
+            <field name="tax_src_id" ref="account_tax_template_s_igi0"/>
+            <field name="tax_dest_id" ref="account_tax_template_s_retencions5"/>
+        </record>
+        <record id="fptt_retencions5_0" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fp_retencions5"/>
+            <field name="tax_src_id" ref="account_tax_template_p_igi0"/>
+            <field name="tax_dest_id" ref="account_tax_template_p_igi0"/>
+        </record>
+        <record id="fptt_retencions5_0_2" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fp_retencions5"/>
+            <field name="tax_src_id" ref="account_tax_template_p_igi0"/>
+            <field name="tax_dest_id" ref="account_tax_template_p_retencions5"/>
+        </record>
+
+    </data>
+</odoo>

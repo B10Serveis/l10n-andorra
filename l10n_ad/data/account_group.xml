@@ -1,0 +1,1963 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+    <record id="account_group_1" model="account.group">
+        <field name="code_prefix">1</field>
+        <field name="name">Finançament Bàsic</field>
+    </record>        
+    <record id="account_group_10" model="account.group">
+        <field name="code_prefix">10</field>
+        <field name="name">Capital</field>
+        <field name="parent_id" ref="l10n_ad.account_group_1"/>
+    </record>
+    <record id="account_group_100" model="account.group">
+        <field name="code_prefix">100</field>
+        <field name="name">Capital social</field>
+        <field name="parent_id" ref="l10n_ad.account_group_10"/>
+    </record>
+    <record id="account_group_101" model="account.group">
+        <field name="code_prefix">101</field>
+        <field name="name">Fons social</field>
+        <field name="parent_id" ref="l10n_ad.account_group_10"/>
+    </record>
+    <record id="account_group_102" model="account.group">
+        <field name="code_prefix">102</field>
+        <field name="name">Capital</field>
+        <field name="parent_id" ref="l10n_ad.account_group_10"/>
+    </record>    
+    <record id="account_group_108" model="account.group">
+        <field name="code_prefix">108</field>
+        <field name="name">Accions o participacions pròpies en situacions especials</field>
+        <field name="parent_id" ref="l10n_ad.account_group_10"/>
+    </record>
+    <record id="account_group_109" model="account.group">
+        <field name="code_prefix">109</field>
+        <field name="name">Accions o participacions pròpias per reducció de capital</field>
+        <field name="parent_id" ref="l10n_ad.account_group_10"/>
+    </record>
+    <record id="account_group_11" model="account.group">
+        <field name="code_prefix">11</field>
+        <field name="name">Reserves</field>
+        <field name="parent_id" ref="l10n_ad.account_group_1"/>
+    </record>
+    <record id="account_group_110" model="account.group">
+        <field name="code_prefix">110</field>
+        <field name="name">Prima d’emissió</field>
+        <field name="parent_id" ref="l10n_ad.account_group_11"/>
+    </record>
+    <record id="account_group_112" model="account.group">
+        <field name="code_prefix">112</field>
+        <field name="name">Reserva legal</field>
+        <field name="parent_id" ref="l10n_ad.account_group_11"/>
+    </record>
+    <record id="account_group_113" model="account.group">
+        <field name="code_prefix">113</field>
+        <field name="name">Reserves estatutàries</field>
+        <field name="parent_id" ref="l10n_ad.account_group_11"/>
+    </record>
+    <record id="account_group_114" model="account.group">
+        <field name="code_prefix">114</field>
+        <field name="name">Reserves voluntaries</field>
+        <field name="parent_id" ref="l10n_ad.account_group_11"/>
+    </record>    
+    <record id="account_group_115" model="account.group">
+        <field name="code_prefix">115</field>
+        <field name="name">Reserves per accions pròpies</field>
+        <field name="parent_id" ref="l10n_ad.account_group_11"/>
+    </record>
+        <record id="account_group_116" model="account.group">
+        <field name="code_prefix">116</field>
+        <field name="name">Reserva de revaloració</field>
+        <field name="parent_id" ref="l10n_ad.account_group_11"/>
+    </record>
+    <record id="account_group_118" model="account.group">
+        <field name="code_prefix">118</field>
+        <field name="name">Aportacions de socis o propietaris</field>
+        <field name="parent_id" ref="l10n_ad.account_group_11"/>
+    </record>
+    <record id="account_group_119" model="account.group">
+        <field name="code_prefix">119</field>
+        <field name="name">Altres reserves</field>
+        <field name="parent_id" ref="l10n_ad.account_group_11"/>
+    </record>
+    <record id="account_group_12" model="account.group">
+        <field name="code_prefix">12</field>
+        <field name="name">Resultats pendents d'aplicació</field>
+        <field name="parent_id" ref="l10n_ad.account_group_1"/>
+    </record>
+    <record id="account_group_120" model="account.group">
+        <field name="code_prefix">120</field>
+        <field name="name">Romanent</field>
+        <field name="parent_id" ref="l10n_ad.account_group_12"/>
+    </record>
+    <record id="account_group_121" model="account.group">
+        <field name="code_prefix">121</field>
+        <field name="name">Resultats negatits d'exercicis anteriors</field>
+        <field name="parent_id" ref="l10n_ad.account_group_12"/>
+    </record>
+    <record id="account_group_129" model="account.group">
+        <field name="code_prefix">129</field>
+        <field name="name">Resultat del exercici</field>
+        <field name="parent_id" ref="l10n_ad.account_group_12"/>
+    </record>
+    <record id="account_group_13" model="account.group">
+        <field name="code_prefix">13</field>
+        <field name="name">Subvencions i donacions</field>
+        <field name="parent_id" ref="l10n_ad.account_group_1"/>
+    </record>
+    <record id="account_group_130" model="account.group">
+        <field name="code_prefix">130</field>
+        <field name="name">Subvencions oficials de capital</field>
+        <field name="parent_id" ref="l10n_ad.account_group_13"/>
+    </record>
+    <record id="account_group_131" model="account.group">
+        <field name="code_prefix">131</field>
+        <field name="name">Donacions i llegats de capital</field>
+        <field name="parent_id" ref="l10n_ad.account_group_13"/>
+    </record>
+    <record id="account_group_132" model="account.group">
+        <field name="code_prefix">132</field>
+        <field name="name">Altres subvencions, donacions i llegats</field>
+        <field name="parent_id" ref="l10n_ad.account_group_13"/>
+    </record>    
+    <record id="account_group_14" model="account.group">
+        <field name="code_prefix">14</field>
+        <field name="name">Provisions</field>
+        <field name="parent_id" ref="l10n_ad.account_group_1"/>
+    </record>
+    <record id="account_group_141" model="account.group">
+        <field name="code_prefix">141</field>
+        <field name="name">Provisió per tributs</field>
+        <field name="parent_id" ref="l10n_ad.account_group_14"/>
+    </record>
+    <record id="account_group_143" model="account.group">
+        <field name="code_prefix">143</field>
+        <field name="name">Provisió per desmantelllament, retirament o rehabilitació de l'immobilitzat</field>
+        <field name="parent_id" ref="l10n_ad.account_group_14"/>
+    </record>
+    <record id="account_group_145" model="account.group">
+        <field name="code_prefix">145</field>
+        <field name="name">Provisió per actuacions medioambientals</field>
+        <field name="parent_id" ref="l10n_ad.account_group_14"/>
+    </record>
+    <record id="account_group_146" model="account.group">
+        <field name="code_prefix">146</field>
+        <field name="name">Provisión per altres responsabilitats</field>
+        <field name="parent_id" ref="l10n_ad.account_group_14"/>
+    </record>   
+    <record id="account_group_16" model="account.group">
+        <field name="code_prefix">16</field>
+        <field name="name">Deutes a llarg termini amb parts vinculades</field>
+        <field name="parent_id" ref="l10n_ad.account_group_1"/>
+    </record>
+    <record id="account_group_160" model="account.group">
+        <field name="code_prefix">160</field>
+        <field name="name">Deutes a llarg termini amb entitats de crèdit vinculades</field>
+        <field name="parent_id" ref="l10n_ad.account_group_16"/>
+    </record>    
+    <record id="account_group_161" model="account.group">
+        <field name="code_prefix">161</field>
+        <field name="name">Proveïdors d’immobilitzat a llarg termini, parts vinculades</field>
+        <field name="parent_id" ref="l10n_ad.account_group_16"/>
+    </record>    
+    <record id="account_group_162" model="account.group">
+        <field name="code_prefix">162</field>
+        <field name="name">Creditors per arrendament financer a llarg termini, parts vinculades</field>
+        <field name="parent_id" ref="l10n_ad.account_group_16"/>
+    </record>    
+    <record id="account_group_163" model="account.group">
+        <field name="code_prefix">163</field>
+        <field name="name">Altres deutes a llarg termini amb parts vinculades</field>
+        <field name="parent_id" ref="l10n_ad.account_group_16"/>
+    </record>    
+    <record id="account_group_17" model="account.group">
+        <field name="code_prefix">17</field>
+        <field name="name">Deutes a llarg termini per préstecs rebuts, emprèstits i altres conceptes</field>
+        <field name="parent_id" ref="l10n_ad.account_group_1"/>
+    </record>
+    <record id="account_group_170" model="account.group">
+        <field name="code_prefix">170</field>
+        <field name="name">Deutes a llarg termini amb entitats de crèdit</field>
+        <field name="parent_id" ref="l10n_ad.account_group_17"/>
+    </record>
+    <record id="account_group_171" model="account.group">
+        <field name="code_prefix">171</field>
+        <field name="name">Deutes a llarg termini</field>
+        <field name="parent_id" ref="l10n_ad.account_group_17"/>
+    </record>
+    <record id="account_group_173" model="account.group">
+        <field name="code_prefix">173</field>
+        <field name="name">Proveïdors d’immobilitzat a llarg termini</field>
+        <field name="parent_id" ref="l10n_ad.account_group_17"/>
+    </record>
+    <record id="account_group_174" model="account.group">
+        <field name="code_prefix">174</field>
+        <field name="name">Creditors per arrendament financer a llarg termini</field>
+        <field name="parent_id" ref="l10n_ad.account_group_17"/>
+    </record>
+    <record id="account_group_175" model="account.group">
+        <field name="code_prefix">175</field>
+        <field name="name">Efectes a pagar a llarg termini</field>
+        <field name="parent_id" ref="l10n_ad.account_group_17"/>
+    </record>    
+    <record id="account_group_177" model="account.group">
+        <field name="code_prefix">177</field>
+        <field name="name">Obligaciones i bons</field>
+        <field name="parent_id" ref="l10n_ad.account_group_17"/>
+    </record>
+    <record id="account_group_179" model="account.group">
+        <field name="code_prefix">179</field>
+        <field name="name">Deutes representats en altres valors negociables</field>
+        <field name="parent_id" ref="l10n_ad.account_group_17"/>
+    </record>
+    <record id="account_group_18" model="account.group">
+        <field name="code_prefix">18</field>
+        <field name="name">Pasius per fiances, garanties i alters conceptes a llarg termini</field>
+        <field name="parent_id" ref="l10n_ad.account_group_1"/>
+    </record>
+    <record id="account_group_180" model="account.group">
+        <field name="code_prefix">180</field>
+        <field name="name">Fiances rebues a llarg termini</field>
+        <field name="parent_id" ref="l10n_ad.account_group_18"/>
+    </record>
+    <record id="account_group_181" model="account.group">
+        <field name="code_prefix">181</field>
+        <field name="name">Bestretes rebudes per vendes o prestacions de serveis a llarg termini</field>
+        <field name="parent_id" ref="l10n_ad.account_group_18"/>
+    </record>
+    <record id="account_group_185" model="account.group">
+        <field name="code_prefix">185</field>
+        <field name="name">Depòsits rebuts a llarg termini</field>
+        <field name="parent_id" ref="l10n_ad.account_group_18"/>
+    </record>
+    <record id="account_group_189" model="account.group">
+        <field name="code_prefix">189</field>
+        <field name="name">Garantías financeres a llarg termini</field>
+        <field name="parent_id" ref="l10n_ad.account_group_18"/>
+    </record>
+    <record id="account_group_19" model="account.group">
+        <field name="code_prefix">19</field>
+        <field name="name">Situacions transitòries de finançament</field>
+        <field name="parent_id" ref="l10n_ad.account_group_1"/>
+    </record>
+    <record id="account_group_194" model="account.group">
+        <field name="code_prefix">194</field>
+        <field name="name">Capital emitido pendiente de inscripción</field>
+        <field name="parent_id" ref="l10n_ad.account_group_19"/>
+    </record>    
+    <record id="account_group_2" model="account.group">
+        <field name="code_prefix">2</field>
+        <field name="name">Actiu no corrent</field>
+    </record>   
+    <record id="account_group_20" model="account.group">
+        <field name="code_prefix">20</field>
+        <field name="name">Immobilitzat intangible</field>
+        <field name="parent_id" ref="l10n_ad.account_group_2"/>
+    </record>
+    <record id="account_group_200" model="account.group">
+        <field name="code_prefix">200</field>
+        <field name="name">Despeses d'establiment</field>
+        <field name="parent_id" ref="l10n_ad.account_group_20"/>
+    </record>
+    <record id="account_group_201" model="account.group">
+        <field name="code_prefix">201</field>
+        <field name="name">Investigació</field>
+        <field name="parent_id" ref="l10n_ad.account_group_20"/>
+    </record>
+    <record id="account_group_202" model="account.group">
+        <field name="code_prefix">202</field>
+        <field name="name">Desenvolupament</field>
+        <field name="parent_id" ref="l10n_ad.account_group_20"/>
+    </record>
+    <record id="account_group_203" model="account.group">
+        <field name="code_prefix">203</field>
+        <field name="name">Concessions administratives</field>
+        <field name="parent_id" ref="l10n_ad.account_group_20"/>
+    </record>
+    <record id="account_group_204" model="account.group">
+        <field name="code_prefix">204</field>
+        <field name="name">Propietat industrial</field>
+        <field name="parent_id" ref="l10n_ad.account_group_20"/>
+    </record>
+    <record id="account_group_205" model="account.group">
+        <field name="code_prefix">205</field>
+        <field name="name">Fons de comerç</field>
+        <field name="parent_id" ref="l10n_ad.account_group_20"/>
+    </record>
+    <record id="account_group_206" model="account.group">
+        <field name="code_prefix">206</field>
+        <field name="name">Drets de traspàs</field>
+        <field name="parent_id" ref="l10n_ad.account_group_20"/>
+    </record>
+    <record id="account_group_207" model="account.group">
+        <field name="code_prefix">207</field>
+        <field name="name">Aplicacions informàtiques</field>
+        <field name="parent_id" ref="l10n_ad.account_group_20"/>
+    </record>
+        <record id="account_group_208" model="account.group">
+        <field name="code_prefix">208</field>
+        <field name="name">Altre immobilitzat intangible</field>
+        <field name="parent_id" ref="l10n_ad.account_group_20"/>
+    </record>
+    <record id="account_group_209" model="account.group">
+        <field name="code_prefix">209</field>
+        <field name="name">Bestretes per immobilitzat intangible</field>
+        <field name="parent_id" ref="l10n_ad.account_group_20"/>
+    </record>
+    <record id="account_group_21" model="account.group">
+        <field name="code_prefix">21</field>
+        <field name="name">Immobilitzat Tangible</field>
+        <field name="parent_id" ref="l10n_ad.account_group_2"/>
+    </record>
+    <record id="account_group_210" model="account.group">
+        <field name="code_prefix">210</field>
+        <field name="name">Terrenys i bens naturals</field>
+        <field name="parent_id" ref="l10n_ad.account_group_21"/>
+    </record>
+    <record id="account_group_211" model="account.group">
+        <field name="code_prefix">211</field>
+        <field name="name">Construccions</field>
+        <field name="parent_id" ref="l10n_ad.account_group_21"/>
+    </record>
+    <record id="account_group_212" model="account.group">
+        <field name="code_prefix">212</field>
+        <field name="name">Instal·lacions tècniques</field>
+        <field name="parent_id" ref="l10n_ad.account_group_21"/>
+    </record>
+    <record id="account_group_213" model="account.group">
+        <field name="code_prefix">213</field>
+        <field name="name">Maquinària</field>
+        <field name="parent_id" ref="l10n_ad.account_group_21"/>
+    </record>
+    <record id="account_group_214" model="account.group">
+        <field name="code_prefix">214</field>
+        <field name="name">Utillatge</field>
+        <field name="parent_id" ref="l10n_ad.account_group_21"/>
+    </record>
+    <record id="account_group_215" model="account.group">
+        <field name="code_prefix">215</field>
+        <field name="name">Altres instal·lacions</field>
+        <field name="parent_id" ref="l10n_ad.account_group_21"/>
+    </record>
+    <record id="account_group_216" model="account.group">
+        <field name="code_prefix">216</field>
+        <field name="name">Mobiliari</field>
+        <field name="parent_id" ref="l10n_ad.account_group_21"/>
+    </record>
+    <record id="account_group_217" model="account.group">
+        <field name="code_prefix">217</field>
+        <field name="name">Equips per a processos d'informació</field>
+        <field name="parent_id" ref="l10n_ad.account_group_21"/>
+    </record>
+    <record id="account_group_218" model="account.group">
+        <field name="code_prefix">218</field>
+        <field name="name">Elements de transport</field>
+        <field name="parent_id" ref="l10n_ad.account_group_21"/>
+    </record>
+    <record id="account_group_219" model="account.group">
+        <field name="code_prefix">219</field>
+        <field name="name">Alter immobilitzat tangible</field>
+        <field name="parent_id" ref="l10n_ad.account_group_21"/>
+    </record>
+    <record id="account_group_22" model="account.group">
+        <field name="code_prefix">22</field>
+        <field name="name">Inversions immobiliaries</field>
+        <field name="parent_id" ref="l10n_ad.account_group_2"/>
+    </record>
+    <record id="account_group_220" model="account.group">
+        <field name="code_prefix">220</field>
+        <field name="name">Inversions en terrenys i béns naturales</field>
+        <field name="parent_id" ref="l10n_ad.account_group_22"/>
+    </record>
+    <record id="account_group_221" model="account.group">
+        <field name="code_prefix">221</field>
+        <field name="name">Inversions en construccions</field>
+        <field name="parent_id" ref="l10n_ad.account_group_22"/>
+    </record>
+    <record id="account_group_23" model="account.group">
+        <field name="code_prefix">23</field>
+        <field name="name">Immobilitzat intangible en curs</field>
+        <field name="parent_id" ref="l10n_ad.account_group_2"/>
+    </record>
+    <record id="account_group_230" model="account.group">
+        <field name="code_prefix">230</field>
+        <field name="name">Adaptació de terrenys i bens naturals</field>
+        <field name="parent_id" ref="l10n_ad.account_group_23"/>
+    </record>
+    <record id="account_group_231" model="account.group">
+        <field name="code_prefix">231</field>
+        <field name="name">Construccions en curs</field>
+        <field name="parent_id" ref="l10n_ad.account_group_23"/>
+    </record>
+    <record id="account_group_232" model="account.group">
+        <field name="code_prefix">232</field>
+        <field name="name">Instal·laciones tècniques en muntatge</field>
+        <field name="parent_id" ref="l10n_ad.account_group_23"/>
+    </record>
+    <record id="account_group_233" model="account.group">
+        <field name="code_prefix">233</field>
+        <field name="name">Maquinària en muntatge</field>
+        <field name="parent_id" ref="l10n_ad.account_group_23"/>
+    </record>
+    <record id="account_group_237" model="account.group">
+        <field name="code_prefix">237</field>
+        <field name="name">Equips per processos d'informació en muntatge</field>
+        <field name="parent_id" ref="l10n_ad.account_group_23"/>
+    </record>
+    <record id="account_group_238" model="account.group">
+        <field name="code_prefix">238</field>
+        <field name="name">Altre immobilitzat tangible en curs</field>
+        <field name="parent_id" ref="l10n_ad.account_group_23"/>
+    </record>
+    <record id="account_group_239" model="account.group">
+        <field name="code_prefix">239</field>
+        <field name="name">Bestretes per immobilitzat tangible</field>
+        <field name="parent_id" ref="l10n_ad.account_group_23"/>
+    </record>
+    <record id="account_group_24" model="account.group">
+        <field name="code_prefix">24</field>
+        <field name="name">Inversions financeres a llarg termini en parts vinculades</field>
+        <field name="parent_id" ref="l10n_ad.account_group_2"/>
+    </record>
+    <record id="account_group_240" model="account.group">
+        <field name="code_prefix">240</field>
+        <field name="name">Participacions a llarg termini en parts vinculades</field>
+        <field name="parent_id" ref="l10n_ad.account_group_24"/>
+    </record>    
+    <record id="account_group_241" model="account.group">
+        <field name="code_prefix">241</field>
+        <field name="name">Valors representatius de deute a llarg termini de parts vinculades</field>
+        <field name="parent_id" ref="l10n_ad.account_group_24"/>
+    </record>   
+    <record id="account_group_242" model="account.group">
+        <field name="code_prefix">242</field>
+        <field name="name">Crèdits a llarg termini a parts vinculades</field>
+        <field name="parent_id" ref="l10n_ad.account_group_24"/>
+    </record>    
+    <record id="account_group_25" model="account.group">
+        <field name="code_prefix">25</field>
+        <field name="name">Altres inversions financeres a llarg termini</field>
+        <field name="parent_id" ref="l10n_ad.account_group_2"/>
+    </record>
+    <record id="account_group_250" model="account.group">
+        <field name="code_prefix">250</field>
+        <field name="name">Inversions financeres a llarg termini en instruments de patrimoni</field>
+        <field name="parent_id" ref="l10n_ad.account_group_25"/>
+    </record>
+    <record id="account_group_251" model="account.group">
+        <field name="code_prefix">251</field>
+        <field name="name">Valors representatius de deute a llarg termini</field>
+        <field name="parent_id" ref="l10n_ad.account_group_25"/>
+    </record>
+    <record id="account_group_252" model="account.group">
+        <field name="code_prefix">252</field>
+        <field name="name">Crèdits a llarg termini</field>
+        <field name="parent_id" ref="l10n_ad.account_group_25"/>
+    </record>
+    <record id="account_group_253" model="account.group">
+        <field name="code_prefix">253</field>
+        <field name="name">Crèdits a llarg termini per alienació d'immobilitzat</field>
+        <field name="parent_id" ref="l10n_ad.account_group_25"/>
+    </record>
+    <record id="account_group_254" model="account.group">
+        <field name="code_prefix">254</field>
+        <field name="name">Crèdits a llarg termini al personal</field>
+        <field name="parent_id" ref="l10n_ad.account_group_25"/>
+    </record>    
+    <record id="account_group_258" model="account.group">
+        <field name="code_prefix">258</field>
+        <field name="name">Imposicions a llarg termini</field>
+        <field name="parent_id" ref="l10n_ad.account_group_25"/>
+    </record>    
+    <record id="account_group_26" model="account.group">
+        <field name="code_prefix">26</field>
+        <field name="name">Fiances i depòsits constituïts a llarg termini</field>
+        <field name="parent_id" ref="l10n_ad.account_group_2"/>
+    </record>
+    <record id="account_group_260" model="account.group">
+        <field name="code_prefix">260</field>
+        <field name="name">Fiances constituïdes a llarg termini</field>
+        <field name="parent_id" ref="l10n_ad.account_group_26"/>
+    </record>
+    <record id="account_group_265" model="account.group">
+        <field name="code_prefix">265</field>
+        <field name="name">Depòsits constituïts a llarg termini</field>
+        <field name="parent_id" ref="l10n_ad.account_group_26"/>
+    </record>
+    <record id="account_group_28" model="account.group">
+        <field name="code_prefix">28</field>
+        <field name="name">Amortizació acumulada del immobilitzat</field>
+        <field name="parent_id" ref="l10n_ad.account_group_2"/>
+    </record>
+    <record id="account_group_280" model="account.group">
+        <field name="code_prefix">280</field>
+        <field name="name">Amortizació acumulada del immobilitzat intangible</field>
+        <field name="parent_id" ref="l10n_ad.account_group_28"/>
+    </record>    
+    <record id="account_group_281" model="account.group">
+        <field name="code_prefix">281</field>
+        <field name="name">Amortizació acumulada del immobilitzat tangible</field>
+        <field name="parent_id" ref="l10n_ad.account_group_28"/>
+    </record>    
+    <record id="account_group_282" model="account.group">
+        <field name="code_prefix">282</field>
+        <field name="name">Amortizació acumulada de les inversions immobiliàries</field>
+        <field name="parent_id" ref="l10n_ad.account_group_28"/>
+    </record>    
+    <record id="account_group_29" model="account.group">
+        <field name="code_prefix">29</field>
+        <field name="name">Deteriorament de valor d'actius no corrents</field>
+        <field name="parent_id" ref="l10n_ad.account_group_2"/>
+    </record>
+    <record id="account_group_290" model="account.group">
+        <field name="code_prefix">290</field>
+        <field name="name">Deteriorament de valor de l'immobilitzat intangible</field>
+        <field name="parent_id" ref="l10n_ad.account_group_29"/>
+    </record>    
+    <record id="account_group_291" model="account.group">
+        <field name="code_prefix">291</field>
+        <field name="name">Deteriorament de valor de l'immobilitzat tangible</field>
+        <field name="parent_id" ref="l10n_ad.account_group_29"/>
+    </record>    
+    <record id="account_group_292" model="account.group">
+        <field name="code_prefix">292</field>
+        <field name="name">Deteriorament de valor de les inversions immobiliaries</field>
+        <field name="parent_id" ref="l10n_ad.account_group_29"/>
+    </record>    
+    <record id="account_group_293" model="account.group">
+        <field name="code_prefix">293</field>
+        <field name="name">Deteriorament de valor de participacions a llarg termini en parts vinculades</field>
+        <field name="parent_id" ref="l10n_ad.account_group_29"/>
+    </record>    
+    <record id="account_group_294" model="account.group">
+        <field name="code_prefix">294</field>
+        <field name="name">Deteriorament de valor de valors representatius de deute a llarg termini de parts vinculades</field>
+        <field name="parent_id" ref="l10n_ad.account_group_29"/>
+    </record>   
+    <record id="account_group_295" model="account.group">
+        <field name="code_prefix">295</field>
+        <field name="name">Deteriorament de valor de crèdits a llarg termini a parts vinculades</field>
+        <field name="parent_id" ref="l10n_ad.account_group_29"/>
+    </record>    
+    <record id="account_group_296" model="account.group">
+        <field name="code_prefix">296</field>
+        <field name="name">Deteriorament de valor de participacions en el patrimoni net a llarg termini</field>
+        <field name="parent_id" ref="l10n_ad.account_group_29"/>
+    </record>
+    <record id="account_group_297" model="account.group">
+        <field name="code_prefix">297</field>
+        <field name="name">Deteriorament de valor de valors representatius de deute a llarg termini</field>
+        <field name="parent_id" ref="l10n_ad.account_group_29"/>
+    </record>
+    <record id="account_group_298" model="account.group">
+        <field name="code_prefix">298</field>
+        <field name="name">Deteriorament de valor de crèdits a llarg termini</field>
+        <field name="parent_id" ref="l10n_ad.account_group_29"/>
+    </record>
+    <record id="account_group_3" model="account.group">
+        <field name="code_prefix">3</field>
+        <field name="name">Existències</field>
+    </record>
+    <record id="account_group_30" model="account.group">
+        <field name="code_prefix">30</field>
+        <field name="name">Comercials</field>
+        <field name="parent_id" ref="l10n_ad.account_group_3"/>
+    </record>
+    <record id="account_group_300" model="account.group">
+        <field name="code_prefix">300</field>
+        <field name="name">Mercaderies A</field>
+        <field name="parent_id" ref="l10n_ad.account_group_30"/>
+    </record>
+    <record id="account_group_301" model="account.group">
+        <field name="code_prefix">301</field>
+        <field name="name">Mercaderies B</field>
+        <field name="parent_id" ref="l10n_ad.account_group_30"/>
+    </record>
+    <record id="account_group_31" model="account.group">
+        <field name="code_prefix">31</field>
+        <field name="name">Matèries primeres</field>
+        <field name="parent_id" ref="l10n_ad.account_group_3"/>
+    </record>
+    <record id="account_group_310" model="account.group">
+        <field name="code_prefix">310</field>
+        <field name="name">Matèries primeres A</field>
+        <field name="parent_id" ref="l10n_ad.account_group_31"/>
+    </record>
+    <record id="account_group_311" model="account.group">
+        <field name="code_prefix">311</field>
+        <field name="name">Matèries primeres B</field>
+        <field name="parent_id" ref="l10n_ad.account_group_31"/>
+    </record>
+    <record id="account_group_32" model="account.group">
+        <field name="code_prefix">32</field>
+        <field name="name">Altres aprovisionaments</field>
+        <field name="parent_id" ref="l10n_ad.account_group_3"/>
+    </record>
+    <record id="account_group_320" model="account.group">
+        <field name="code_prefix">320</field>
+        <field name="name">Elements i conjunts incorporables</field>
+        <field name="parent_id" ref="l10n_ad.account_group_32"/>
+    </record>
+    <record id="account_group_321" model="account.group">
+        <field name="code_prefix">321</field>
+        <field name="name">Combustibles</field>
+        <field name="parent_id" ref="l10n_ad.account_group_32"/>
+    </record>
+    <record id="account_group_322" model="account.group">
+        <field name="code_prefix">322</field>
+        <field name="name">Recanvis</field>
+        <field name="parent_id" ref="l10n_ad.account_group_32"/>
+    </record>
+    <record id="account_group_325" model="account.group">
+        <field name="code_prefix">325</field>
+        <field name="name">Materials diversos</field>
+        <field name="parent_id" ref="l10n_ad.account_group_32"/>
+    </record>
+    <record id="account_group_326" model="account.group">
+        <field name="code_prefix">326</field>
+        <field name="name">Embalatges</field>
+        <field name="parent_id" ref="l10n_ad.account_group_32"/>
+    </record>
+    <record id="account_group_327" model="account.group">
+        <field name="code_prefix">327</field>
+        <field name="name">Envasos</field>
+        <field name="parent_id" ref="l10n_ad.account_group_32"/>
+    </record>
+    <record id="account_group_328" model="account.group">
+        <field name="code_prefix">328</field>
+        <field name="name">Material d'oficina</field>
+        <field name="parent_id" ref="l10n_ad.account_group_32"/>
+    </record>
+    <record id="account_group_33" model="account.group">
+        <field name="code_prefix">33</field>
+        <field name="name">Productes en curs</field>
+        <field name="parent_id" ref="l10n_ad.account_group_3"/>
+    </record>
+    <record id="account_group_330" model="account.group">
+        <field name="code_prefix">330</field>
+        <field name="name">Productes en curs A</field>
+        <field name="parent_id" ref="l10n_ad.account_group_33"/>
+    </record>
+    <record id="account_group_331" model="account.group">
+        <field name="code_prefix">331</field>
+        <field name="name">Productes en curs B</field>
+        <field name="parent_id" ref="l10n_ad.account_group_33"/>
+    </record>
+    <record id="account_group_34" model="account.group">
+        <field name="code_prefix">34</field>
+        <field name="name">Productes semiacabats</field>
+        <field name="parent_id" ref="l10n_ad.account_group_3"/>
+    </record>
+    <record id="account_group_340" model="account.group">
+        <field name="code_prefix">340</field>
+        <field name="name">Productes semiacabats A</field>
+        <field name="parent_id" ref="l10n_ad.account_group_34"/>
+    </record>
+    <record id="account_group_341" model="account.group">
+        <field name="code_prefix">341</field>
+        <field name="name">Productes semiacabats B</field>
+        <field name="parent_id" ref="l10n_ad.account_group_34"/>
+    </record>
+    <record id="account_group_35" model="account.group">
+        <field name="code_prefix">35</field>
+        <field name="name">Productes acabats</field>
+        <field name="parent_id" ref="l10n_ad.account_group_3"/>
+    </record>
+    <record id="account_group_350" model="account.group">
+        <field name="code_prefix">350</field>
+        <field name="name">Productes acabats A</field>
+        <field name="parent_id" ref="l10n_ad.account_group_35"/>
+    </record>
+    <record id="account_group_351" model="account.group">
+        <field name="code_prefix">351</field>
+        <field name="name">Productes acabats B</field>
+        <field name="parent_id" ref="l10n_ad.account_group_35"/>
+    </record>
+    <record id="account_group_36" model="account.group">
+        <field name="code_prefix">36</field>
+        <field name="name">Subproductes, residus i materials recuperats</field>
+        <field name="parent_id" ref="l10n_ad.account_group_3"/>
+    </record>
+    <record id="account_group_360" model="account.group">
+        <field name="code_prefix">360</field>
+        <field name="name">Subproductes A</field>
+        <field name="parent_id" ref="l10n_ad.account_group_36"/>
+    </record>
+    <record id="account_group_361" model="account.group">
+        <field name="code_prefix">361</field>
+        <field name="name">Subproductes B</field>
+        <field name="parent_id" ref="l10n_ad.account_group_36"/>
+    </record>
+    <record id="account_group_365" model="account.group">
+        <field name="code_prefix">365</field>
+        <field name="name">Residus A</field>
+        <field name="parent_id" ref="l10n_ad.account_group_36"/>
+    </record>
+    <record id="account_group_366" model="account.group">
+        <field name="code_prefix">366</field>
+        <field name="name">Residus B</field>
+        <field name="parent_id" ref="l10n_ad.account_group_36"/>
+    </record>
+    <record id="account_group_368" model="account.group">
+        <field name="code_prefix">368</field>
+        <field name="name">Materials recuperats A</field>
+        <field name="parent_id" ref="l10n_ad.account_group_36"/>
+    </record>
+    <record id="account_group_369" model="account.group">
+        <field name="code_prefix">369</field>
+        <field name="name">Materials recuperats B</field>
+        <field name="parent_id" ref="l10n_ad.account_group_36"/>
+    </record>
+    <record id="account_group_39" model="account.group">
+        <field name="code_prefix">39</field>
+        <field name="name">Deteriorament de valor de las existències</field>
+        <field name="parent_id" ref="l10n_ad.account_group_3"/>
+    </record>
+    <record id="account_group_390" model="account.group">
+        <field name="code_prefix">390</field>
+        <field name="name">Deteriorament de valor de las mercaderies</field>
+        <field name="parent_id" ref="l10n_ad.account_group_39"/>
+    </record>
+    <record id="account_group_391" model="account.group">
+        <field name="code_prefix">391</field>
+        <field name="name">Deteriorament de valor de las materies primeres</field>
+        <field name="parent_id" ref="l10n_ad.account_group_39"/>
+    </record>
+    <record id="account_group_392" model="account.group">
+        <field name="code_prefix">392</field>
+        <field name="name">Deteriorament de valor d'altres aprovisionaments</field>
+        <field name="parent_id" ref="l10n_ad.account_group_39"/>
+    </record>
+    <record id="account_group_393" model="account.group">
+        <field name="code_prefix">393</field>
+        <field name="name">Deteriorament de valor de los productes en curs</field>
+        <field name="parent_id" ref="l10n_ad.account_group_39"/>
+    </record>
+    <record id="account_group_394" model="account.group">
+        <field name="code_prefix">394</field>
+        <field name="name">Deteriorament de valor dels productes semiacabats</field>
+        <field name="parent_id" ref="l10n_ad.account_group_39"/>
+    </record>
+    <record id="account_group_395" model="account.group">
+        <field name="code_prefix">395</field>
+        <field name="name">Deteriorament de valor dels productes acabats</field>
+        <field name="parent_id" ref="l10n_ad.account_group_39"/>
+    </record>
+    <record id="account_group_396" model="account.group">
+        <field name="code_prefix">396</field>
+        <field name="name">Deteriorament de valor dels subproductes, residus i materials recuperats</field>
+        <field name="parent_id" ref="l10n_ad.account_group_39"/>
+    </record>
+    <record id="account_group_4" model="account.group">
+        <field name="code_prefix">4</field>
+        <field name="name">Creditors i deudors per operacions comerciales</field>
+    </record>
+    <record id="account_group_40" model="account.group">
+        <field name="code_prefix">40</field>
+        <field name="name">Proveïdors</field>
+        <field name="parent_id" ref="l10n_ad.account_group_4"/>
+    </record>
+    <record id="account_group_400" model="account.group">
+        <field name="code_prefix">400</field>
+        <field name="name">Proveïdors</field>
+        <field name="parent_id" ref="l10n_ad.account_group_40"/>
+    </record>    
+    <record id="account_group_401" model="account.group">
+        <field name="code_prefix">401</field>
+        <field name="name">Proveïdors, efectes comercials a pagar</field>
+        <field name="parent_id" ref="l10n_ad.account_group_40"/>
+    </record>
+    <record id="account_group_403" model="account.group">
+        <field name="code_prefix">403</field>
+        <field name="name">Proveïdors, empreses del grup</field>
+        <field name="parent_id" ref="l10n_ad.account_group_40"/>
+    </record>    
+    <record id="account_group_404" model="account.group">
+        <field name="code_prefix">404</field>
+        <field name="name">Proveïdors, empreses associades</field>
+        <field name="parent_id" ref="l10n_ad.account_group_40"/>
+    </record>
+    <record id="account_group_405" model="account.group">
+        <field name="code_prefix">405</field>
+        <field name="name">Proveïdors, altres parts vinculades</field>
+        <field name="parent_id" ref="l10n_ad.account_group_40"/>
+    </record>
+    <record id="account_group_406" model="account.group">
+        <field name="code_prefix">406</field>
+        <field name="name">Envases i embalatges a retornar a proveïdors</field>
+        <field name="parent_id" ref="l10n_ad.account_group_40"/>
+    </record>
+    <record id="account_group_407" model="account.group">
+        <field name="code_prefix">407</field>
+        <field name="name">Bestretes a proveïdors</field>
+        <field name="parent_id" ref="l10n_ad.account_group_40"/>
+    </record>
+    <record id="account_group_41" model="account.group">
+        <field name="code_prefix">41</field>
+        <field name="name">Creditors diversos</field>
+        <field name="parent_id" ref="l10n_ad.account_group_4"/>
+    </record>
+    <record id="account_group_410" model="account.group">
+        <field name="code_prefix">410</field>
+        <field name="name">Creditors por prestacions de serveis</field>
+        <field name="parent_id" ref="l10n_ad.account_group_41"/>
+    </record>    
+    <record id="account_group_411" model="account.group">
+        <field name="code_prefix">411</field>
+        <field name="name">Creditors, efectes comercials a pagar</field>
+        <field name="parent_id" ref="l10n_ad.account_group_41"/>
+    </record>    
+    <record id="account_group_43" model="account.group">
+        <field name="code_prefix">43</field>
+        <field name="name">Clients</field>
+        <field name="parent_id" ref="l10n_ad.account_group_4"/>
+    </record>
+    <record id="account_group_430" model="account.group">
+        <field name="code_prefix">430</field>
+        <field name="name">Clients</field>
+        <field name="parent_id" ref="l10n_ad.account_group_43"/>
+    </record>    
+    <record id="account_group_431" model="account.group">
+        <field name="code_prefix">431</field>
+        <field name="name">Clients, efectes comercials a cobrar</field>
+        <field name="parent_id" ref="l10n_ad.account_group_43"/>
+    </record>    
+    <record id="account_group_432" model="account.group">
+        <field name="code_prefix">432</field>
+        <field name="name">Clients, operacions de «factoring»</field>
+        <field name="parent_id" ref="l10n_ad.account_group_43"/>
+    </record>
+    <record id="account_group_433" model="account.group">
+        <field name="code_prefix">433</field>
+        <field name="name">Clients, empreses del grup</field>
+        <field name="parent_id" ref="l10n_ad.account_group_43"/>
+    </record>    
+    <record id="account_group_434" model="account.group">
+        <field name="code_prefix">434</field>
+        <field name="name">Clients, empreses associades</field>
+        <field name="parent_id" ref="l10n_ad.account_group_43"/>
+    </record>
+    <record id="account_group_435" model="account.group">
+        <field name="code_prefix">435</field>
+        <field name="name">Clients, altres empreses vinculadas</field>
+        <field name="parent_id" ref="l10n_ad.account_group_43"/>
+    </record>
+    <record id="account_group_436" model="account.group">
+        <field name="code_prefix">436</field>
+        <field name="name">Clients de cobrament dubtós</field>
+        <field name="parent_id" ref="l10n_ad.account_group_43"/>
+    </record>
+    <record id="account_group_437" model="account.group">
+        <field name="code_prefix">437</field>
+        <field name="name">Envasos i embalatges a retornar per clients</field>
+        <field name="parent_id" ref="l10n_ad.account_group_43"/>
+    </record>
+    <record id="account_group_438" model="account.group">
+        <field name="code_prefix">438</field>
+        <field name="name">Bestretes de clients</field>
+        <field name="parent_id" ref="l10n_ad.account_group_43"/>
+    </record>
+    <record id="account_group_44" model="account.group">
+        <field name="code_prefix">44</field>
+        <field name="name">Deutors diversos</field>
+        <field name="parent_id" ref="l10n_ad.account_group_4"/>
+    </record>
+    <record id="account_group_440" model="account.group">
+        <field name="code_prefix">440</field>
+        <field name="name">Deutors</field>
+        <field name="parent_id" ref="l10n_ad.account_group_44"/>
+    </record>    
+    <record id="account_group_441" model="account.group">
+        <field name="code_prefix">441</field>
+        <field name="name">Deutors, efectes comercials a cobrar</field>
+        <field name="parent_id" ref="l10n_ad.account_group_44"/>
+    </record>    
+    <record id="account_group_446" model="account.group">
+        <field name="code_prefix">446</field>
+        <field name="name">Deutors de cobrament dubtós</field>
+        <field name="parent_id" ref="l10n_ad.account_group_44"/>
+    </record>    
+    <record id="account_group_46" model="account.group">
+        <field name="code_prefix">46</field>
+        <field name="name">Personal</field>
+        <field name="parent_id" ref="l10n_ad.account_group_4"/>
+    </record>
+    <record id="account_group_460" model="account.group">
+        <field name="code_prefix">460</field>
+        <field name="name">Bestretes de remuneracions</field>
+        <field name="parent_id" ref="l10n_ad.account_group_46"/>
+    </record> 
+    <record id="account_group_465" model="account.group">
+        <field name="code_prefix">465</field>
+        <field name="name">Remuneracions pendents de pagament</field>
+        <field name="parent_id" ref="l10n_ad.account_group_46"/>
+    </record>
+    <record id="account_group_466" model="account.group">
+        <field name="code_prefix">466</field>
+        <field name="name">Remuneracions mitjançant sistemes d'aportació definida pendents de pagament</field>
+        <field name="parent_id" ref="l10n_ad.account_group_46"/>
+    </record>
+    <record id="account_group_47" model="account.group">
+        <field name="code_prefix">47</field>
+        <field name="name">Administracions públiques</field>
+        <field name="parent_id" ref="l10n_ad.account_group_4"/>
+    </record>
+    <record id="account_group_470" model="account.group">
+        <field name="code_prefix">470</field>
+        <field name="name">Administracions públiques, deutor</field>
+        <field name="parent_id" ref="l10n_ad.account_group_47"/>
+    </record>    
+    <record id="account_group_472" model="account.group">
+        <field name="code_prefix">472</field>
+        <field name="name">Administracions públiques, impost indirecte suportat</field>
+        <field name="parent_id" ref="l10n_ad.account_group_47"/>
+    </record>
+    <record id="account_group_473" model="account.group">
+        <field name="code_prefix">473</field>
+        <field name="name">Administracions públiques, retencions i pagaments a compte per ISI</field>
+        <field name="parent_id" ref="l10n_ad.account_group_47"/>
+    </record>    
+    <record id="account_group_475" model="account.group">
+        <field name="code_prefix">475</field>
+        <field name="name">Administracions públiques, creditor</field>
+        <field name="parent_id" ref="l10n_ad.account_group_47"/>
+    </record>    
+    <record id="account_group_476" model="account.group">
+        <field name="code_prefix">476</field>
+        <field name="name">Caixa Andorrana de Seguretat Social, creditors</field>
+        <field name="parent_id" ref="l10n_ad.account_group_47"/>
+    </record>
+    <record id="account_group_477" model="account.group">
+        <field name="code_prefix">477</field>
+        <field name="name">Administracions públiques, impost indirecte repercutit</field>
+        <field name="parent_id" ref="l10n_ad.account_group_47"/>
+    </record>    
+    <record id="account_group_48" model="account.group">
+        <field name="code_prefix">48</field>
+        <field name="name">Ajustaments per periodificació</field>
+        <field name="parent_id" ref="l10n_ad.account_group_4"/>
+    </record>
+    <record id="account_group_480" model="account.group">
+        <field name="code_prefix">480</field>
+        <field name="name">Despeses anticipades</field>
+        <field name="parent_id" ref="l10n_ad.account_group_48"/>
+    </record>
+    <record id="account_group_485" model="account.group">
+        <field name="code_prefix">485</field>
+        <field name="name">Ingressos anticipats</field>
+        <field name="parent_id" ref="l10n_ad.account_group_48"/>
+    </record>
+    <record id="account_group_49" model="account.group">
+        <field name="code_prefix">49</field>
+        <field name="name">Deteriorament de valor de crèdits comercials i provisions a curt termini</field>
+        <field name="parent_id" ref="l10n_ad.account_group_4"/>
+    </record>
+    <record id="account_group_490" model="account.group">
+        <field name="code_prefix">490</field>
+        <field name="name">Deteriorament de valor de crèdits per operacions comerciales</field>
+        <field name="parent_id" ref="l10n_ad.account_group_49"/>
+    </record>
+    <record id="account_group_493" model="account.group">
+        <field name="code_prefix">493</field>
+        <field name="name">Deteriorament de valor de crèdits per operaciones comercials  amb parts vinculades</field>
+        <field name="parent_id" ref="l10n_ad.account_group_49"/>
+    </record>    
+    <record id="account_group_499" model="account.group">
+        <field name="code_prefix">499</field>
+        <field name="name">Provisions per operacions comercials</field>
+        <field name="parent_id" ref="l10n_ad.account_group_49"/>
+    </record>    
+    <record id="account_group_5" model="account.group">
+        <field name="code_prefix">5</field>
+        <field name="name">Comptes financers</field>
+    </record>
+    <record id="account_group_50" model="account.group">
+        <field name="code_prefix">50</field>
+        <field name="name">Emprèstits, deutes amb característiques especials i altres emissions anàlogues a curt termini</field>
+        <field name="parent_id" ref="l10n_ad.account_group_5"/>
+    </record>
+    <record id="account_group_500" model="account.group">
+        <field name="code_prefix">500</field>
+        <field name="name">Obligacions i bons a curt termini</field>
+        <field name="parent_id" ref="l10n_ad.account_group_50"/>
+    </record>
+    <record id="account_group_505" model="account.group">
+        <field name="code_prefix">505</field>
+        <field name="name">Deutes representats en altres valors negociables a curt termini</field>
+        <field name="parent_id" ref="l10n_ad.account_group_50"/>
+    </record>
+    <record id="account_group_506" model="account.group">
+        <field name="code_prefix">506</field>
+        <field name="name">Interessos a curt termini d'emprèstits i altres emissions anàlogues</field>
+        <field name="parent_id" ref="l10n_ad.account_group_50"/>
+    </record>    
+    <record id="account_group_51" model="account.group">
+        <field name="code_prefix">51</field>
+        <field name="name">Deutes a curt termini amb parts vinculades</field>
+        <field name="parent_id" ref="l10n_ad.account_group_5"/>
+    </record>
+    <record id="account_group_510" model="account.group">
+        <field name="code_prefix">510</field>
+        <field name="name">Deutes a curt termini amb entitats de crèdit vinculades</field>
+        <field name="parent_id" ref="l10n_ad.account_group_51"/>
+    </record>   
+    <record id="account_group_511" model="account.group">
+        <field name="code_prefix">511</field>
+        <field name="name">Proveïdors d'immobilitzat a curt termini, parts vinculades</field>
+        <field name="parent_id" ref="l10n_ad.account_group_51"/>
+    </record>    
+    <record id="account_group_512" model="account.group">
+        <field name="code_prefix">512</field>
+        <field name="name">Creditors per arrendament financer a curt termini, parts vinculades.</field>
+        <field name="parent_id" ref="l10n_ad.account_group_51"/>
+    </record>    
+    <record id="account_group_513" model="account.group">
+        <field name="code_prefix">513</field>
+        <field name="name">Altres deutes a curt termini amb parts vinculades</field>
+        <field name="parent_id" ref="l10n_ad.account_group_51"/>
+    </record>    
+    <record id="account_group_514" model="account.group">
+        <field name="code_prefix">514</field>
+        <field name="name">Interessos a curt termini de deutes amb parts vinculades</field>
+        <field name="parent_id" ref="l10n_ad.account_group_51"/>
+    </record>   
+    <record id="account_group_52" model="account.group">
+        <field name="code_prefix">52</field>
+        <field name="name">Deutes a curt termini per prèstecs rebuts i altres conceptes</field>
+        <field name="parent_id" ref="l10n_ad.account_group_5"/>
+    </record>
+    <record id="account_group_520" model="account.group">
+        <field name="code_prefix">520</field>
+        <field name="name">Deutes a curt termini amb entitats de crèdit</field>
+        <field name="parent_id" ref="l10n_ad.account_group_52"/>
+    </record>    
+    <record id="account_group_523" model="account.group">
+        <field name="code_prefix">523</field>
+        <field name="name">Proveïdors d'immobilitzat a curt termini</field>
+        <field name="parent_id" ref="l10n_ad.account_group_52"/>
+    </record>
+    <record id="account_group_524" model="account.group">
+        <field name="code_prefix">524</field>
+        <field name="name">Creditors per arrendament financer a curt termini</field>
+        <field name="parent_id" ref="l10n_ad.account_group_52"/>
+    </record>    
+    <record id="account_group_526" model="account.group">
+        <field name="code_prefix">526</field>
+        <field name="name">Dividend actiu a pagar</field>
+        <field name="parent_id" ref="l10n_ad.account_group_52"/>
+    </record>
+    <record id="account_group_527" model="account.group">
+        <field name="code_prefix">527</field>
+        <field name="name">Interessos a curt termini de deutes amb entidats de crèdit</field>
+        <field name="parent_id" ref="l10n_ad.account_group_52"/>
+    </record>
+    <record id="account_group_528" model="account.group">
+        <field name="code_prefix">528</field>
+        <field name="name">Altres deutes a curt termini</field>
+        <field name="parent_id" ref="l10n_ad.account_group_52"/>
+    </record>
+    <record id="account_group_529" model="account.group">
+        <field name="code_prefix">529</field>
+        <field name="name">Provisions a curt termini</field>
+        <field name="parent_id" ref="l10n_ad.account_group_52"/>
+    </record>    
+    <record id="account_group_53" model="account.group">
+        <field name="code_prefix">53</field>
+        <field name="name">Inversions financeres a curt termini en parts vinculades</field>
+        <field name="parent_id" ref="l10n_ad.account_group_5"/>
+    </record>
+    <record id="account_group_530" model="account.group">
+        <field name="code_prefix">530</field>
+        <field name="name">Participacions a curt termini en parts vinculades</field>
+        <field name="parent_id" ref="l10n_ad.account_group_53"/>
+    </record>    
+    <record id="account_group_531" model="account.group">
+        <field name="code_prefix">531</field>
+        <field name="name">Crèdits i valors representatius de deute a curt termini de parts vinculades</field>
+        <field name="parent_id" ref="l10n_ad.account_group_53"/>
+    </record>    
+    <record id="account_group_533" model="account.group">
+        <field name="code_prefix">533</field>
+        <field name="name">Interessos a curt termini de crèdits i valors representatius de deute de parts vinculades</field>
+        <field name="parent_id" ref="l10n_ad.account_group_53"/>
+    </record>   
+    <record id="account_group_535" model="account.group">
+        <field name="code_prefix">535</field>
+        <field name="name">Dividend a cobrar d'inversions financeres en parts vinculades</field>
+        <field name="parent_id" ref="l10n_ad.account_group_53"/>
+    </record>    
+    <record id="account_group_54" model="account.group">
+        <field name="code_prefix">54</field>
+        <field name="name">Altres inversions financeres a curt termini</field>
+        <field name="parent_id" ref="l10n_ad.account_group_5"/>
+    </record>
+    <record id="account_group_540" model="account.group">
+        <field name="code_prefix">540</field>
+        <field name="name">Inversions financeres a curt termini en instruments de patrimoni</field>
+        <field name="parent_id" ref="l10n_ad.account_group_54"/>
+    </record>
+    <record id="account_group_541" model="account.group">
+        <field name="code_prefix">541</field>
+        <field name="name">Crèdits i valors representatius de deute a curt termini</field>
+        <field name="parent_id" ref="l10n_ad.account_group_54"/>
+    </record>    
+    <record id="account_group_543" model="account.group">
+        <field name="code_prefix">543</field>
+        <field name="name">Crèdits a curt termini per alienació d'immobilitzat</field>
+        <field name="parent_id" ref="l10n_ad.account_group_54"/>
+    </record>
+    <record id="account_group_544" model="account.group">
+        <field name="code_prefix">544</field>
+        <field name="name">Crèdits a curt termini al personal</field>
+        <field name="parent_id" ref="l10n_ad.account_group_54"/>
+    </record>
+    <record id="account_group_545" model="account.group">
+        <field name="code_prefix">545</field>
+        <field name="name">Dividend a cobrar</field>
+        <field name="parent_id" ref="l10n_ad.account_group_54"/>
+    </record>
+    <record id="account_group_546" model="account.group">
+        <field name="code_prefix">546</field>
+        <field name="name">Interessos a curt termini de crèdits i valors representatius de deutes</field>
+        <field name="parent_id" ref="l10n_ad.account_group_54"/>
+    </record>    
+    <record id="account_group_548" model="account.group">
+        <field name="code_prefix">548</field>
+        <field name="name">Imposicions a curt termini</field>
+        <field name="parent_id" ref="l10n_ad.account_group_54"/>
+    </record>    
+    <record id="account_group_55" model="account.group">
+        <field name="code_prefix">55</field>
+        <field name="name">Altres comptes no bancaris</field>
+        <field name="parent_id" ref="l10n_ad.account_group_5"/>
+    </record>
+    <record id="account_group_550" model="account.group">
+        <field name="code_prefix">550</field>
+        <field name="name">Titular de l'explotación</field>
+        <field name="parent_id" ref="l10n_ad.account_group_55"/>
+    </record>
+    <record id="account_group_551" model="account.group">
+        <field name="code_prefix">551</field>
+        <field name="name">Compte corrent amb socis i administradors</field>
+        <field name="parent_id" ref="l10n_ad.account_group_55"/>
+    </record>
+    <record id="account_group_552" model="account.group">
+        <field name="code_prefix">552</field>
+        <field name="name">Compte corrient amb altres persones i entidats vinculades</field>
+        <field name="parent_id" ref="l10n_ad.account_group_55"/>
+    </record>    
+    <record id="account_group_554" model="account.group">
+        <field name="code_prefix">554</field>
+        <field name="name">Compte corrient amb unions temporals d'empreses i comunitats de bens</field>
+        <field name="parent_id" ref="l10n_ad.account_group_55"/>
+    </record>
+    <record id="account_group_555" model="account.group">
+        <field name="code_prefix">555</field>
+        <field name="name">Partides pendents d'aplicació</field>
+        <field name="parent_id" ref="l10n_ad.account_group_55"/>
+    </record>
+    <record id="account_group_556" model="account.group">
+        <field name="code_prefix">556</field>
+        <field name="name">Desemborsaments exigits sobre participacions en el patrimoni net</field>
+        <field name="parent_id" ref="l10n_ad.account_group_55"/>
+    </record>    
+    <record id="account_group_557" model="account.group">
+        <field name="code_prefix">557</field>
+        <field name="name">Dividend actiu a compte</field>
+        <field name="parent_id" ref="l10n_ad.account_group_55"/>
+    </record>    
+    <record id="account_group_56" model="account.group">
+        <field name="code_prefix">56</field>
+        <field name="name">Fiances i depòsits rebuts i constituïts a curt termini i ajustos per periodificació</field>
+        <field name="parent_id" ref="l10n_ad.account_group_5"/>
+    </record>
+    <record id="account_group_560" model="account.group">
+        <field name="code_prefix">560</field>
+        <field name="name">Fiances rebudes a curt termini</field>
+        <field name="parent_id" ref="l10n_ad.account_group_56"/>
+    </record>
+    <record id="account_group_561" model="account.group">
+        <field name="code_prefix">561</field>
+        <field name="name">Depòsits rebuts a curt termini</field>
+        <field name="parent_id" ref="l10n_ad.account_group_56"/>
+    </record>
+    <record id="account_group_565" model="account.group">
+        <field name="code_prefix">565</field>
+        <field name="name">Fiances constituïdes a curt termini</field>
+        <field name="parent_id" ref="l10n_ad.account_group_56"/>
+    </record>
+    <record id="account_group_566" model="account.group">
+        <field name="code_prefix">566</field>
+        <field name="name">Depòsits constituïts a curt termini</field>
+        <field name="parent_id" ref="l10n_ad.account_group_56"/>
+    </record>
+    <record id="account_group_567" model="account.group">
+        <field name="code_prefix">567</field>
+        <field name="name">Interessos pagats per anticipat</field>
+        <field name="parent_id" ref="l10n_ad.account_group_56"/>
+    </record>
+    <record id="account_group_568" model="account.group">
+        <field name="code_prefix">568</field>
+        <field name="name">Interessos cobrats per anticipat</field>
+        <field name="parent_id" ref="l10n_ad.account_group_56"/>
+    </record>
+    <record id="account_group_569" model="account.group">
+        <field name="code_prefix">569</field>
+        <field name="name">Garanties financeres a curt termini</field>
+        <field name="parent_id" ref="l10n_ad.account_group_56"/>
+    </record>
+    <record id="account_group_57" model="account.group">
+        <field name="code_prefix">57</field>
+        <field name="name">Tresoreria</field>
+        <field name="parent_id" ref="l10n_ad.account_group_5"/>
+    </record>
+    <record id="account_group_570" model="account.group">
+        <field name="code_prefix">570</field>
+        <field name="name">Caixa, euros</field>
+        <field name="parent_id" ref="l10n_ad.account_group_57"/>
+    </record>
+    <record id="account_group_571" model="account.group">
+        <field name="code_prefix">571</field>
+        <field name="name">Caixa, moneda estrangera</field>
+        <field name="parent_id" ref="l10n_ad.account_group_57"/>
+    </record>
+    <record id="account_group_572" model="account.group">
+        <field name="code_prefix">572</field>
+        <field name="name">Bancs i institucions de crèdit c/c vista, euros</field>
+        <field name="parent_id" ref="l10n_ad.account_group_57"/>
+    </record>
+    <record id="account_group_573" model="account.group">
+        <field name="code_prefix">573</field>
+        <field name="name">Bancs i institucions de crèdit c/c vista, moneda estrangera</field>
+        <field name="parent_id" ref="l10n_ad.account_group_57"/>
+    </record>
+    <record id="account_group_574" model="account.group">
+        <field name="code_prefix">574</field>
+        <field name="name">Bancs i institucions de crèdit, comptes d'estalvi, euros</field>
+        <field name="parent_id" ref="l10n_ad.account_group_57"/>
+    </record>
+    <record id="account_group_575" model="account.group">
+        <field name="code_prefix">575</field>
+        <field name="name">Bancs i institucions de crèdit, comptes d'estalvi, moneda estrangera</field>
+        <field name="parent_id" ref="l10n_ad.account_group_57"/>
+    </record>
+    <record id="account_group_576" model="account.group">
+        <field name="code_prefix">576</field>
+        <field name="name">Inversions a curt termini de gran liquiditat</field>
+        <field name="parent_id" ref="l10n_ad.account_group_57"/>
+    </record>
+    <record id="account_group_58" model="account.group">
+        <field name="code_prefix">58</field>
+        <field name="name">Actius no corrents mantinguts per a la venda i actius i passius associats</field>
+        <field name="parent_id" ref="l10n_ad.account_group_5"/>
+    </record>
+    <record id="account_group_580" model="account.group">
+        <field name="code_prefix">580</field>
+        <field name="name">Immobilitzat</field>
+        <field name="parent_id" ref="l10n_ad.account_group_58"/>
+    </record>
+    <record id="account_group_581" model="account.group">
+        <field name="code_prefix">581</field>
+        <field name="name">Inversiones amb persones i entitats vinculades</field>
+        <field name="parent_id" ref="l10n_ad.account_group_58"/>
+    </record>
+    <record id="account_group_582" model="account.group">
+        <field name="code_prefix">582</field>
+        <field name="name">Inversions financeres</field>
+        <field name="parent_id" ref="l10n_ad.account_group_58"/>
+    </record>
+    <record id="account_group_583" model="account.group">
+        <field name="code_prefix">583</field>
+        <field name="name">Existencies, deutors comercials i altres comptes a cobrar</field>
+        <field name="parent_id" ref="l10n_ad.account_group_58"/>
+    </record>
+    <record id="account_group_584" model="account.group">
+        <field name="code_prefix">584</field>
+        <field name="name">Altres actius</field>
+        <field name="parent_id" ref="l10n_ad.account_group_58"/>
+    </record>
+    <record id="account_group_585" model="account.group">
+        <field name="code_prefix">585</field>
+        <field name="name">Provisions</field>
+        <field name="parent_id" ref="l10n_ad.account_group_58"/>
+    </record>
+    <record id="account_group_586" model="account.group">
+        <field name="code_prefix">586</field>
+        <field name="name">Deutes amb característiques especials</field>
+        <field name="parent_id" ref="l10n_ad.account_group_58"/>
+    </record>
+    <record id="account_group_587" model="account.group">
+        <field name="code_prefix">587</field>
+        <field name="name">Deutes amb persones i entitats vinculades</field>
+        <field name="parent_id" ref="l10n_ad.account_group_58"/>
+    </record>
+    <record id="account_group_588" model="account.group">
+        <field name="code_prefix">588</field>
+        <field name="name">Creditors comercials i altres comptes a pagar</field>
+        <field name="parent_id" ref="l10n_ad.account_group_58"/>
+    </record>
+    <record id="account_group_589" model="account.group">
+        <field name="code_prefix">589</field>
+        <field name="name">Altres passius</field>
+        <field name="parent_id" ref="l10n_ad.account_group_58"/>
+    </record>
+    <record id="account_group_59" model="account.group">
+        <field name="code_prefix">59</field>
+        <field name="name">Deteriorament del valor d'inversions financeres a curt termini i d'actius no corrients mantinguts per a la venda</field>
+        <field name="parent_id" ref="l10n_ad.account_group_5"/>
+    </record>
+    <record id="account_group_593" model="account.group">
+        <field name="code_prefix">593</field>
+        <field name="name">Deteriorament de valor de participacions a curt termini en parts vinculades</field>
+        <field name="parent_id" ref="l10n_ad.account_group_59"/>
+    </record>
+    <record id="account_group_594" model="account.group">
+        <field name="code_prefix">594</field>
+        <field name="name">Deteriorament de valor de valors representatius de deute a curt termini de parts vinculades</field>
+        <field name="parent_id" ref="l10n_ad.account_group_59"/>
+    </record>
+    <record id="account_group_595" model="account.group">
+        <field name="code_prefix">595</field>
+        <field name="name">Deteriorament de valor de crèdits a curt termini en parts vinculades</field>
+        <field name="parent_id" ref="l10n_ad.account_group_59"/>
+    </record>    
+    <record id="account_group_597" model="account.group">
+        <field name="code_prefix">597</field>
+        <field name="name">Deteriorament de valor de valores representativos de deute a curt termini</field>
+        <field name="parent_id" ref="l10n_ad.account_group_59"/>
+    </record>
+    <record id="account_group_598" model="account.group">
+        <field name="code_prefix">598</field>
+        <field name="name">Deteriorament de valor de crèdits a curt termini</field>
+        <field name="parent_id" ref="l10n_ad.account_group_59"/>
+    </record>
+    <record id="account_group_599" model="account.group">
+        <field name="code_prefix">599</field>
+        <field name="name">Deteriorament de valor d'actius no corrents mantinguts per a la venda</field>
+        <field name="parent_id" ref="l10n_ad.account_group_59"/>
+    </record>    
+    <record id="account_group_6" model="account.group">
+        <field name="code_prefix">6</field>
+        <field name="name">Compres i despeses</field>
+    </record>
+    <record id="account_group_60" model="account.group">
+        <field name="code_prefix">60</field>
+        <field name="name">Compres</field>
+        <field name="parent_id" ref="l10n_ad.account_group_6"/>
+    </record>
+    <record id="account_group_600" model="account.group">
+        <field name="code_prefix">600</field>
+        <field name="name">Compres de mercaderies</field>
+        <field name="parent_id" ref="l10n_ad.account_group_60"/>
+    </record>
+    <record id="account_group_601" model="account.group">
+        <field name="code_prefix">601</field>
+        <field name="name">Compres de matèries primeres</field>
+        <field name="parent_id" ref="l10n_ad.account_group_60"/>
+    </record>
+    <record id="account_group_602" model="account.group">
+        <field name="code_prefix">602</field>
+        <field name="name">Compres d'altres aprovisionaments</field>
+        <field name="parent_id" ref="l10n_ad.account_group_60"/>
+    </record>
+    <record id="account_group_606" model="account.group">
+        <field name="code_prefix">606</field>
+        <field name="name">Descomptes sobre compres per pagament immediat</field>
+        <field name="parent_id" ref="l10n_ad.account_group_60"/>
+    </record>    
+    <record id="account_group_607" model="account.group">
+        <field name="code_prefix">607</field>
+        <field name="name">Traballs realitzats per altres empreses</field>
+        <field name="parent_id" ref="l10n_ad.account_group_60"/>
+    </record>
+    <record id="account_group_608" model="account.group">
+        <field name="code_prefix">608</field>
+        <field name="name">Devolucions de compres y operacions similars</field>
+        <field name="parent_id" ref="l10n_ad.account_group_60"/>
+    </record>    
+    <record id="account_group_609" model="account.group">
+        <field name="code_prefix">609</field>
+        <field name="name">Ràpels per compres</field>
+        <field name="parent_id" ref="l10n_ad.account_group_60"/>
+    </record>    
+    <record id="account_group_61" model="account.group">
+        <field name="code_prefix">61</field>
+        <field name="name">Variació d'existencies</field>
+        <field name="parent_id" ref="l10n_ad.account_group_6"/>
+    </record>
+    <record id="account_group_610" model="account.group">
+        <field name="code_prefix">610</field>
+        <field name="name">Variació d'existencies de mercaderies</field>
+        <field name="parent_id" ref="l10n_ad.account_group_61"/>
+    </record>
+    <record id="account_group_611" model="account.group">
+        <field name="code_prefix">611</field>
+        <field name="name">Variació d'existencies de matèries primeres</field>
+        <field name="parent_id" ref="l10n_ad.account_group_61"/>
+    </record>
+    <record id="account_group_612" model="account.group">
+        <field name="code_prefix">612</field>
+        <field name="name">Variació d'existencies d'altres aprovisionaments</field>
+        <field name="parent_id" ref="l10n_ad.account_group_61"/>
+    </record>
+    <record id="account_group_62" model="account.group">
+        <field name="code_prefix">62</field>
+        <field name="name">Serveis externs</field>
+        <field name="parent_id" ref="l10n_ad.account_group_6"/>
+    </record>
+    <record id="account_group_620" model="account.group">
+        <field name="code_prefix">620</field>
+        <field name="name">Despeses en investigació i desenvolupament del exercici</field>
+        <field name="parent_id" ref="l10n_ad.account_group_62"/>
+    </record>
+    <record id="account_group_621" model="account.group">
+        <field name="code_prefix">621</field>
+        <field name="name">Arrendaments i cànons</field>
+        <field name="parent_id" ref="l10n_ad.account_group_62"/>
+    </record>
+    <record id="account_group_622" model="account.group">
+        <field name="code_prefix">622</field>
+        <field name="name">Reparacions i conservació</field>
+        <field name="parent_id" ref="l10n_ad.account_group_62"/>
+    </record>
+    <record id="account_group_623" model="account.group">
+        <field name="code_prefix">623</field>
+        <field name="name">Serveis de professionals independents</field>
+        <field name="parent_id" ref="l10n_ad.account_group_62"/>
+    </record>
+    <record id="account_group_624" model="account.group">
+        <field name="code_prefix">624</field>
+        <field name="name">Transports</field>
+        <field name="parent_id" ref="l10n_ad.account_group_62"/>
+    </record>
+    <record id="account_group_625" model="account.group">
+        <field name="code_prefix">625</field>
+        <field name="name">Primes d'assegurances</field>
+        <field name="parent_id" ref="l10n_ad.account_group_62"/>
+    </record>
+    <record id="account_group_626" model="account.group">
+        <field name="code_prefix">626</field>
+        <field name="name">Serveis bancaris i similars</field>
+        <field name="parent_id" ref="l10n_ad.account_group_62"/>
+    </record>
+    <record id="account_group_627" model="account.group">
+        <field name="code_prefix">627</field>
+        <field name="name">Publicitat, propaganda i relacions públiques</field>
+        <field name="parent_id" ref="l10n_ad.account_group_62"/>
+    </record>
+    <record id="account_group_628" model="account.group">
+        <field name="code_prefix">628</field>
+        <field name="name">Subministraments</field>
+        <field name="parent_id" ref="l10n_ad.account_group_62"/>
+    </record>
+    <record id="account_group_629" model="account.group">
+        <field name="code_prefix">629</field>
+        <field name="name">Altres serveis</field>
+        <field name="parent_id" ref="l10n_ad.account_group_62"/>
+    </record>
+    <record id="account_group_63" model="account.group">
+        <field name="code_prefix">63</field>
+        <field name="name">Tributs</field>
+        <field name="parent_id" ref="l10n_ad.account_group_6"/>
+    </record>   
+    <record id="account_group_631" model="account.group">
+        <field name="code_prefix">631</field>
+        <field name="name">Altres tributos</field>
+        <field name="parent_id" ref="l10n_ad.account_group_63"/>
+    </record>
+    <record id="account_group_64" model="account.group">
+        <field name="code_prefix">64</field>
+        <field name="name">Despeses de personal</field>
+        <field name="parent_id" ref="l10n_ad.account_group_6"/>
+    </record>   
+    <record id="account_group_640" model="account.group">
+        <field name="code_prefix">640</field>
+        <field name="name">Sous i salaris</field>
+        <field name="parent_id" ref="l10n_ad.account_group_64"/>
+    </record>
+    <record id="account_group_641" model="account.group">
+        <field name="code_prefix">641</field>
+        <field name="name">Indemnitzacions</field>
+        <field name="parent_id" ref="l10n_ad.account_group_64"/>
+    </record>
+    <record id="account_group_642" model="account.group">
+        <field name="code_prefix">642</field>
+        <field name="name">Caixa Andorrana de Seguretat Social a càrrec de l’empresari</field>
+        <field name="parent_id" ref="l10n_ad.account_group_64"/>
+    </record>
+    <record id="account_group_643" model="account.group">
+        <field name="code_prefix">643</field>
+        <field name="name">Retribucions a llarg termini mitjançant sistemes d’aportació definida</field>
+        <field name="parent_id" ref="l10n_ad.account_group_64"/>
+    </record>    
+    <record id="account_group_649" model="account.group">
+        <field name="code_prefix">649</field>
+        <field name="name">Altres despeses socials</field>
+        <field name="parent_id" ref="l10n_ad.account_group_64"/>
+    </record>
+    <record id="account_group_65" model="account.group">
+        <field name="code_prefix">65</field>
+        <field name="name">Altres despeses de gestió</field>
+        <field name="parent_id" ref="l10n_ad.account_group_6"/>
+    </record>
+    <record id="account_group_650" model="account.group">
+        <field name="code_prefix">650</field>
+        <field name="name">Pèrdues de crèdits comerciales incobrables</field>
+        <field name="parent_id" ref="l10n_ad.account_group_65"/>
+    </record>    
+    <record id="account_group_659" model="account.group">
+        <field name="code_prefix">659</field>
+        <field name="name">Altres pèrdues en gestió corrent</field>
+        <field name="parent_id" ref="l10n_ad.account_group_65"/>
+    </record>
+    <record id="account_group_66" model="account.group">
+        <field name="code_prefix">66</field>
+        <field name="name">Despeses financeres</field>
+        <field name="parent_id" ref="l10n_ad.account_group_6"/>
+    </record>
+    <record id="account_group_660" model="account.group">
+        <field name="code_prefix">660</field>
+        <field name="name">Despeses financeres per actualizació de provisions</field>
+        <field name="parent_id" ref="l10n_ad.account_group_66"/>
+    </record>
+    <record id="account_group_661" model="account.group">
+        <field name="code_prefix">661</field>
+        <field name="name">Interessos d'obligacions i bons</field>
+        <field name="parent_id" ref="l10n_ad.account_group_66"/>
+    </record>    
+    <record id="account_group_662" model="account.group">
+        <field name="code_prefix">662</field>
+        <field name="name">Interessos de deutes</field>
+        <field name="parent_id" ref="l10n_ad.account_group_66"/>
+    </record>    
+    <record id="account_group_663" model="account.group">
+        <field name="code_prefix">663</field>
+        <field name="name">Pèrdues per valoració d'instruments financers pel seu valor raonable</field>
+        <field name="parent_id" ref="l10n_ad.account_group_66"/>
+    </record>    
+    <record id="account_group_664" model="account.group">
+        <field name="code_prefix">664</field>
+        <field name="name">Despeses por dividends d'accions o participacions considerades com passius financers</field>
+        <field name="parent_id" ref="l10n_ad.account_group_66"/>
+    </record>    
+    <record id="account_group_665" model="account.group">
+        <field name="code_prefix">665</field>
+        <field name="name">Interessos per descompte d'efectes i operacions de «factoring»</field>
+        <field name="parent_id" ref="l10n_ad.account_group_66"/>
+    </record>    
+    <record id="account_group_666" model="account.group">
+        <field name="code_prefix">666</field>
+        <field name="name">Pèrdues en participacions i valors representatius de deute</field>
+        <field name="parent_id" ref="l10n_ad.account_group_66"/>
+    </record>    
+    <record id="account_group_667" model="account.group">
+        <field name="code_prefix">667</field>
+        <field name="name">Pèrdues de crèdits no comercials</field>
+        <field name="parent_id" ref="l10n_ad.account_group_66"/>
+    </record>    
+    <record id="account_group_668" model="account.group">
+        <field name="code_prefix">668</field>
+        <field name="name">Diferencies negatives de canvi</field>
+        <field name="parent_id" ref="l10n_ad.account_group_66"/>
+    </record>
+    <record id="account_group_669" model="account.group">
+        <field name="code_prefix">669</field>
+        <field name="name">Altres despeses financeres</field>
+        <field name="parent_id" ref="l10n_ad.account_group_66"/>
+    </record>
+    <record id="account_group_67" model="account.group">
+        <field name="code_prefix">67</field>
+        <field name="name">Pèrdues procedents d'actius no corrents i despeses excepcionals</field>
+        <field name="parent_id" ref="l10n_ad.account_group_6"/>
+    </record>
+    <record id="account_group_670" model="account.group">
+        <field name="code_prefix">670</field>
+        <field name="name">Pèrdues procedents del immobilitzat intangible</field>
+        <field name="parent_id" ref="l10n_ad.account_group_67"/>
+    </record>
+    <record id="account_group_671" model="account.group">
+        <field name="code_prefix">671</field>
+        <field name="name">Pèrdues procedents del immobilitzat tangible</field>
+        <field name="parent_id" ref="l10n_ad.account_group_67"/>
+    </record>
+    <record id="account_group_672" model="account.group">
+        <field name="code_prefix">672</field>
+        <field name="name">Pèrdues procedents de les inversions immobiliaries</field>
+        <field name="parent_id" ref="l10n_ad.account_group_67"/>
+    </record>
+    <record id="account_group_673" model="account.group">
+        <field name="code_prefix">673</field>
+        <field name="name">Pèrdues procedents de participacions a llarg termini en parts vinculades</field>
+        <field name="parent_id" ref="l10n_ad.account_group_67"/>
+    </record>    
+    <record id="account_group_675" model="account.group">
+        <field name="code_prefix">675</field>
+        <field name="name">Pèrdues per operacions amb obligacions pròpies</field>
+        <field name="parent_id" ref="l10n_ad.account_group_67"/>
+    </record>
+    <record id="account_group_678" model="account.group">
+        <field name="code_prefix">678</field>
+        <field name="name">Despeses excepcionals</field>
+        <field name="parent_id" ref="l10n_ad.account_group_67"/>
+    </record>
+    <record id="account_group_68" model="account.group">
+        <field name="code_prefix">68</field>
+        <field name="name">Dotacions per amortitzacions</field>
+        <field name="parent_id" ref="l10n_ad.account_group_6"/>
+    </record>
+    <record id="account_group_680" model="account.group">
+        <field name="code_prefix">680</field>
+        <field name="name">Amortització del immobilitzat intangible</field>
+        <field name="parent_id" ref="l10n_ad.account_group_68"/>
+    </record>
+    <record id="account_group_681" model="account.group">
+        <field name="code_prefix">681</field>
+        <field name="name">Amortització del immobilitzat tangible</field>
+        <field name="parent_id" ref="l10n_ad.account_group_68"/>
+    </record>
+    <record id="account_group_682" model="account.group">
+        <field name="code_prefix">682</field>
+        <field name="name">Amortizació de las inversions immobiliaries</field>
+        <field name="parent_id" ref="l10n_ad.account_group_68"/>
+    </record>
+    <record id="account_group_69" model="account.group">
+        <field name="code_prefix">69</field>
+        <field name="name">Pèrdues per deteriorament i altres dotacions</field>
+        <field name="parent_id" ref="l10n_ad.account_group_6"/>
+    </record>
+    <record id="account_group_690" model="account.group">
+        <field name="code_prefix">690</field>
+        <field name="name">Pèrdues per deteriorament del immobilitzat intangible</field>
+        <field name="parent_id" ref="l10n_ad.account_group_69"/>
+    </record>
+    <record id="account_group_691" model="account.group">
+        <field name="code_prefix">691</field>
+        <field name="name">Pèrdues per deteriorament del immobilitzat tangible</field>
+        <field name="parent_id" ref="l10n_ad.account_group_69"/>
+    </record>
+    <record id="account_group_692" model="account.group">
+        <field name="code_prefix">692</field>
+        <field name="name">Pèrdues per deteriorament de les inversions immobiliaries</field>
+        <field name="parent_id" ref="l10n_ad.account_group_69"/>
+    </record>
+    <record id="account_group_693" model="account.group">
+        <field name="code_prefix">693</field>
+        <field name="name">Pèrdues per deteriorament d'existències</field>
+        <field name="parent_id" ref="l10n_ad.account_group_69"/>
+    </record>    
+    <record id="account_group_694" model="account.group">
+        <field name="code_prefix">694</field>
+        <field name="name">Pèrdues per deteriorament de crèdits per operacions comercials</field>
+        <field name="parent_id" ref="l10n_ad.account_group_69"/>
+    </record>
+    <record id="account_group_695" model="account.group">
+        <field name="code_prefix">695</field>
+        <field name="name">Dotación a la provisió per operacions comerciales</field>
+        <field name="parent_id" ref="l10n_ad.account_group_69"/>
+    </record>    
+    <record id="account_group_696" model="account.group">
+        <field name="code_prefix">696</field>
+        <field name="name">Pèrdues per deteriorament de participacions i valors representatius de deute a llarg termini</field>
+        <field name="parent_id" ref="l10n_ad.account_group_69"/>
+    </record>    
+    <record id="account_group_697" model="account.group">
+        <field name="code_prefix">697</field>
+        <field name="name">Pèrdues per deteriorament de crèdits a llarg termini</field>
+        <field name="parent_id" ref="l10n_ad.account_group_69"/>
+    </record>    
+    <record id="account_group_698" model="account.group">
+        <field name="code_prefix">698</field>
+        <field name="name">Pèrdues per deteriorament de participacions i valors representatius de deute a curt termini</field>
+        <field name="parent_id" ref="l10n_ad.account_group_69"/>
+    </record>    
+    <record id="account_group_699" model="account.group">
+        <field name="code_prefix">699</field>
+        <field name="name">Pèrdues por deteriorament de crèdits a curt termini</field>
+        <field name="parent_id" ref="l10n_ad.account_group_69"/>
+    </record>
+    <record id="account_group_7" model="account.group">
+        <field name="code_prefix">7</field>
+        <field name="name">Vendes i ingressos</field>
+    </record>
+    <record id="account_group_70" model="account.group">
+        <field name="code_prefix">70</field>
+        <field name="name">Vendes de mercaderies, de producció pròpia, de serveis, etc</field>
+        <field name="parent_id" ref="l10n_ad.account_group_7"/>
+    </record>
+    <record id="account_group_700" model="account.group">
+        <field name="code_prefix">700</field>
+        <field name="name">Vendes de mercaderies</field>
+        <field name="parent_id" ref="l10n_ad.account_group_70"/>
+    </record>
+    <record id="account_group_701" model="account.group">
+        <field name="code_prefix">701</field>
+        <field name="name">Vendes de productes acabats</field>
+        <field name="parent_id" ref="l10n_ad.account_group_70"/>
+    </record>
+    <record id="account_group_702" model="account.group">
+        <field name="code_prefix">702</field>
+        <field name="name">Vendes de productes semiacabats</field>
+        <field name="parent_id" ref="l10n_ad.account_group_70"/>
+    </record>
+    <record id="account_group_703" model="account.group">
+        <field name="code_prefix">703</field>
+        <field name="name">Vendes de subproductes i residus</field>
+        <field name="parent_id" ref="l10n_ad.account_group_70"/>
+    </record>
+    <record id="account_group_704" model="account.group">
+        <field name="code_prefix">704</field>
+        <field name="name">Vendes d'envasos i embalatges</field>
+        <field name="parent_id" ref="l10n_ad.account_group_70"/>
+    </record>
+    <record id="account_group_705" model="account.group">
+        <field name="code_prefix">705</field>
+        <field name="name">Prestacions de serveis</field>
+        <field name="parent_id" ref="l10n_ad.account_group_70"/>
+    </record>
+    <record id="account_group_706" model="account.group">
+        <field name="code_prefix">706</field>
+        <field name="name">Descomptes sobre vendes per pagament immediat</field>
+        <field name="parent_id" ref="l10n_ad.account_group_70"/>
+    </record>    
+    <record id="account_group_708" model="account.group">
+        <field name="code_prefix">708</field>
+        <field name="name">Devolucions de vendes i operacions similars</field>
+        <field name="parent_id" ref="l10n_ad.account_group_70"/>
+    </record>    
+    <record id="account_group_709" model="account.group">
+        <field name="code_prefix">709</field>
+        <field name="name">Ràpels sobre vendes</field>
+        <field name="parent_id" ref="l10n_ad.account_group_70"/>
+    </record>    
+    <record id="account_group_71" model="account.group">
+        <field name="code_prefix">71</field>
+        <field name="name">Variació d'existències</field>
+        <field name="parent_id" ref="l10n_ad.account_group_7"/>
+    </record>
+    <record id="account_group_710" model="account.group">
+        <field name="code_prefix">710</field>
+        <field name="name">Variació d'existències de productes en curs</field>
+        <field name="parent_id" ref="l10n_ad.account_group_71"/>
+    </record>
+    <record id="account_group_711" model="account.group">
+        <field name="code_prefix">711</field>
+        <field name="name">Variació d'existències de productes semiacabats</field>
+        <field name="parent_id" ref="l10n_ad.account_group_71"/>
+    </record>
+    <record id="account_group_712" model="account.group">
+        <field name="code_prefix">712</field>
+        <field name="name">Variació d'existències de productes acabats</field>
+        <field name="parent_id" ref="l10n_ad.account_group_71"/>
+    </record>
+    <record id="account_group_713" model="account.group">
+        <field name="code_prefix">713</field>
+        <field name="name">Variació d'existencies de subproductes, residus i materials recuperats</field>
+        <field name="parent_id" ref="l10n_ad.account_group_71"/>
+    </record>    
+    <record id="account_group_73" model="account.group">
+        <field name="code_prefix">73</field>
+        <field name="name">Treballs realitzats per l'empresari</field>
+        <field name="parent_id" ref="l10n_ad.account_group_7"/>
+    </record>
+    <record id="account_group_730" model="account.group">
+        <field name="code_prefix">730</field>
+        <field name="name">Treballs realitzats per a l'immobilitzat intangible</field>
+        <field name="parent_id" ref="l10n_ad.account_group_73"/>
+    </record>
+    <record id="account_group_731" model="account.group">
+        <field name="code_prefix">731</field>
+        <field name="name">Treballs realitzats per a l'immobilitzat tangible</field>
+        <field name="parent_id" ref="l10n_ad.account_group_73"/>
+    </record>
+    <record id="account_group_732" model="account.group">
+        <field name="code_prefix">732</field>
+        <field name="name">Treballs realizados en inversiones inmobiliarias</field>
+        <field name="parent_id" ref="l10n_ad.account_group_73"/>
+    </record>
+    <record id="account_group_733" model="account.group">
+        <field name="code_prefix">733</field>
+        <field name="name">Treballs realitzats per a l'immobilitzat tangible en curs</field>
+        <field name="parent_id" ref="l10n_ad.account_group_73"/>
+    </record>
+    <record id="account_group_74" model="account.group">
+        <field name="code_prefix">74</field>
+        <field name="name">Subvencions, donacions i llegats</field>
+        <field name="parent_id" ref="l10n_ad.account_group_7"/>
+    </record>
+    <record id="account_group_740" model="account.group">
+        <field name="code_prefix">740</field>
+        <field name="name">Subvencions, donacions i llegats a l'explotació</field>
+        <field name="parent_id" ref="l10n_ad.account_group_74"/>
+    </record>
+    <record id="account_group_746" model="account.group">
+        <field name="code_prefix">746</field>
+        <field name="name">Subvencions, donacions i llegats de capital transferits al resultat de l'exercici</field>
+        <field name="parent_id" ref="l10n_ad.account_group_74"/>
+    </record>
+    <record id="account_group_747" model="account.group">
+        <field name="code_prefix">747</field>
+        <field name="name">Altres subvencions, donacions i llegats transferits al resultat del exercici</field>
+        <field name="parent_id" ref="l10n_ad.account_group_74"/>
+    </record>
+    <record id="account_group_75" model="account.group">
+        <field name="code_prefix">75</field>
+        <field name="name">Altres ingressos de gestió</field>
+        <field name="parent_id" ref="l10n_ad.account_group_7"/>
+    </record>    
+    <record id="account_group_752" model="account.group">
+        <field name="code_prefix">752</field>
+        <field name="name">Ingressos per arrendaments</field>
+        <field name="parent_id" ref="l10n_ad.account_group_75"/>
+    </record>
+    <record id="account_group_753" model="account.group">
+        <field name="code_prefix">753</field>
+        <field name="name">Ingressos de propietat industrial cedida en explotació</field>
+        <field name="parent_id" ref="l10n_ad.account_group_75"/>
+    </record>
+    <record id="account_group_754" model="account.group">
+        <field name="code_prefix">754</field>
+        <field name="name">Ingressos per comissions</field>
+        <field name="parent_id" ref="l10n_ad.account_group_75"/>
+    </record>
+    <record id="account_group_755" model="account.group">
+        <field name="code_prefix">755</field>
+        <field name="name">Ingressos per serveis al personal</field>
+        <field name="parent_id" ref="l10n_ad.account_group_75"/>
+    </record>
+    <record id="account_group_759" model="account.group">
+        <field name="code_prefix">759</field>
+        <field name="name">Ingressos per serveis diversos</field>
+        <field name="parent_id" ref="l10n_ad.account_group_75"/>
+    </record>
+    <record id="account_group_76" model="account.group">
+        <field name="code_prefix">76</field>
+        <field name="name">Ingressos financers</field>
+        <field name="parent_id" ref="l10n_ad.account_group_7"/>
+    </record>
+    <record id="account_group_760" model="account.group">
+        <field name="code_prefix">760</field>
+        <field name="name">Ingressos de participacions en instruments de patrimoni</field>
+        <field name="parent_id" ref="l10n_ad.account_group_76"/>
+    </record>    
+    <record id="account_group_761" model="account.group">
+        <field name="code_prefix">761</field>
+        <field name="name">Ingressos de valorss representatius de deute</field>
+        <field name="parent_id" ref="l10n_ad.account_group_76"/>
+    </record>    
+    <record id="account_group_762" model="account.group">
+        <field name="code_prefix">762</field>
+        <field name="name">Ingressos de crèdits</field>
+        <field name="parent_id" ref="l10n_ad.account_group_76"/>
+    </record>    
+    <record id="account_group_763" model="account.group">
+        <field name="code_prefix">763</field>
+        <field name="name">Beneficis per venda, venciment o valoració d’instruments financers pel seu valor raonable</field>
+        <field name="parent_id" ref="l10n_ad.account_group_76"/>
+    </record>    
+    <record id="account_group_766" model="account.group">
+        <field name="code_prefix">766</field>
+        <field name="name">Beneficis en participacions i valors representatius de deute</field>
+        <field name="parent_id" ref="l10n_ad.account_group_76"/>
+    </record>    
+    <record id="account_group_768" model="account.group">
+        <field name="code_prefix">768</field>
+        <field name="name">Diferències positives de canvi</field>
+        <field name="parent_id" ref="l10n_ad.account_group_76"/>
+    </record>
+    <record id="account_group_769" model="account.group">
+        <field name="code_prefix">769</field>
+        <field name="name">Altres ingressos financers</field>
+        <field name="parent_id" ref="l10n_ad.account_group_76"/>
+    </record>
+    <record id="account_group_77" model="account.group">
+        <field name="code_prefix">77</field>
+        <field name="name">Beneficis procedents d'actius no corrents i ingressos excepcionals</field>
+        <field name="parent_id" ref="l10n_ad.account_group_7"/>
+    </record>
+    <record id="account_group_770" model="account.group">
+        <field name="code_prefix">770</field>
+        <field name="name">Beneficis procedents de l'immobilitzat intangible</field>
+        <field name="parent_id" ref="l10n_ad.account_group_77"/>
+    </record>
+    <record id="account_group_771" model="account.group">
+        <field name="code_prefix">771</field>
+        <field name="name">Beneficis procedents de l'immobilitzat tangible</field>
+        <field name="parent_id" ref="l10n_ad.account_group_77"/>
+    </record>
+    <record id="account_group_772" model="account.group">
+        <field name="code_prefix">772</field>
+        <field name="name">Beneficis procedents de les inversions immobiliaries</field>
+        <field name="parent_id" ref="l10n_ad.account_group_77"/>
+    </record>
+    <record id="account_group_773" model="account.group">
+        <field name="code_prefix">773</field>
+        <field name="name">Beneficios procedents de participacions a llarg termini en parts vinculades</field>
+        <field name="parent_id" ref="l10n_ad.account_group_77"/>
+    </record>    
+    <record id="account_group_775" model="account.group">
+        <field name="code_prefix">775</field>
+        <field name="name">Beneficis per operacions amb obligacions pròpies</field>
+        <field name="parent_id" ref="l10n_ad.account_group_77"/>
+    </record>
+    <record id="account_group_778" model="account.group">
+        <field name="code_prefix">778</field>
+        <field name="name">Ingressos excepcionals</field>
+        <field name="parent_id" ref="l10n_ad.account_group_77"/>
+    </record>
+    <record id="account_group_79" model="account.group">
+        <field name="code_prefix">79</field>
+        <field name="name">Excés i aplicacions de provisions i de pèrdues per deteriorament</field>
+        <field name="parent_id" ref="l10n_ad.account_group_7"/>
+    </record>
+    <record id="account_group_790" model="account.group">
+        <field name="code_prefix">790</field>
+        <field name="name">Reversió del deteriorament de l'immobilitzat intangible</field>
+        <field name="parent_id" ref="l10n_ad.account_group_79"/>
+    </record>
+    <record id="account_group_791" model="account.group">
+        <field name="code_prefix">791</field>
+        <field name="name">Reversió del deteriorament de l'immobilitzat tangible</field>
+        <field name="parent_id" ref="l10n_ad.account_group_79"/>
+    </record>
+    <record id="account_group_792" model="account.group">
+        <field name="code_prefix">792</field>
+        <field name="name">Reversió del deteriorament de les inversions immobiliàries</field>
+        <field name="parent_id" ref="l10n_ad.account_group_79"/>
+    </record>
+    <record id="account_group_793" model="account.group">
+        <field name="code_prefix">793</field>
+        <field name="name">Reversió del deteriorament d'existències</field>
+        <field name="parent_id" ref="l10n_ad.account_group_79"/>
+    </record>    
+    <record id="account_group_794" model="account.group">
+        <field name="code_prefix">794</field>
+        <field name="name">Reversió del deteriorament de crèdits per operacions comercials</field>
+        <field name="parent_id" ref="l10n_ad.account_group_79"/>
+    </record>
+    <record id="account_group_795" model="account.group">
+        <field name="code_prefix">795</field>
+        <field name="name">Excés de provisions</field>
+        <field name="parent_id" ref="l10n_ad.account_group_79"/>
+    </record>    
+    <record id="account_group_796" model="account.group">
+        <field name="code_prefix">796</field>
+        <field name="name">Reversió del deteriorament de participacions i valors representatius de deute a llarg termini</field>
+        <field name="parent_id" ref="l10n_ad.account_group_79"/>
+    </record>    
+    <record id="account_group_797" model="account.group">
+        <field name="code_prefix">797</field>
+        <field name="name">Reversió del deteriorament de crèdits a llarg termini</field>
+        <field name="parent_id" ref="l10n_ad.account_group_79"/>
+    </record>    
+    <record id="account_group_798" model="account.group">
+        <field name="code_prefix">798</field>
+        <field name="name">Reversió del deteriorament de participacions i valors representatius de deute a curt termini</field>
+        <field name="parent_id" ref="l10n_ad.account_group_79"/>
+    </record>    
+    <record id="account_group_799" model="account.group">
+        <field name="code_prefix">799</field>
+        <field name="name">Reversió del deteriorament de crèdits a curt termini</field>
+        <field name="parent_id" ref="l10n_ad.account_group_79"/>
+    </record>   
+    </data>
+</odoo>
